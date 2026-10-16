@@ -9,6 +9,7 @@ interface ShopState {
   theme: 'light' | 'dark';
   catalog: Product[] | null;
   assembly: boolean;
+  wholesale: boolean;
   add: (productId: string, variant: string, quantity?: number, group?: string) => void;
   addBuild: (items: Omit<CartItem, 'key'>[], assembly: boolean) => void;
   remove: (key: string) => void;
@@ -19,6 +20,7 @@ interface ShopState {
   clear: () => void;
   setCatalog: (p: Product[] | null) => void;
   setAssembly: (b: boolean) => void;
+  setWholesale: (b: boolean) => void;
 }
 const safeStorage = {
   getItem: (k: string) => {
@@ -51,6 +53,7 @@ export const useShop = create<ShopState>()(
       theme: 'light',
       catalog: null,
       assembly: false,
+      wholesale: false,
       add: (productId, variant, quantity = 1, group) =>
         set((s) => {
           const count = Math.max(1, Math.min(99, Math.floor(quantity) || 1));
@@ -89,16 +92,17 @@ export const useShop = create<ShopState>()(
             : [...s.favorites, id],
         })),
       toggleTheme: () => set((s) => ({ theme: s.theme === 'light' ? 'dark' : 'light' })),
-      clear: () => set({ cart: [], assembly: false }),
+      clear: () => set({ cart: [], assembly: false, wholesale: false }),
       setCatalog: (catalog) => set({ catalog }),
       setAssembly: (assembly) => set({ assembly }),
+      setWholesale: (wholesale) => set({ wholesale }),
     }),
     {
       name: 'spinpoint-shop-v1',
-      version: 2,
+      version: 3,
       storage: createJSONStorage(() => safeStorage),
       migrate: (persisted, version) => {
-        if (version >= 2 || !persisted || typeof persisted !== 'object') return persisted;
+        if (version >= 3 || !persisted || typeof persisted !== 'object') return persisted;
         const previous = persisted as Partial<ShopState>;
         const catalog = catalogSchema.safeParse(previous.catalog);
         if (!catalog.success) return persisted;
@@ -107,9 +111,16 @@ export const useShop = create<ShopState>()(
           ...previous,
           catalog: catalog.data.map((p) => {
             const updated = prices.get(p.id);
-            return updated
-              ? { ...p, price: updated.price, priceEstimated: updated.priceEstimated }
-              : p;
+            return {
+              ...p,
+              ...(updated && version < 2
+                ? { price: updated.price, priceEstimated: updated.priceEstimated }
+                : {}),
+              leadTime:
+                p.status === 'preorder' && p.leadTime === 'Термін узгоджуємо перед оплатою'
+                  ? '20–30 днів'
+                  : p.leadTime,
+            };
           }),
         };
       },
@@ -125,6 +136,7 @@ export const useShop = create<ShopState>()(
             : [],
           catalog: cat?.success ? cat.data : null,
           assembly: p.assembly === true,
+          wholesale: p.wholesale === true,
           cart: Array.isArray(p.cart)
             ? p.cart.filter(
                 (i) =>

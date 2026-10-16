@@ -4,17 +4,19 @@ import { ArrowRight, Trash2, ArrowLeft, ShieldCheck } from 'lucide-react';
 import { useCatalog, useShop } from '../stores/shop';
 import { Breadcrumbs, EmptyState, Quantity, DemoNotice } from '../components/Common';
 import { ProductImage } from '../components/ProductArt';
-import { assemblyFee, cartTotal, formatOrder } from '../utils/orders';
+import { formatOrder } from '../utils/orders';
+import { quoteCart } from '../utils/pricing';
 import { money } from '../utils/catalog';
 import { useMeta } from '../hooks/useMeta';
-import { siteConfig } from '../config/site';
+import { siteConfig, statusLabels } from '../config/site';
+import WholesalePrices, { ProductAvailability } from '../components/WholesalePrices';
 import OrderComposer from '../components/OrderComposer';
 import type { CheckoutDetails } from '../types/catalog';
 export default function Cart() {
   const shop = useShop();
   const products = useCatalog();
   const [checkout, setCheckout] = useState(false);
-  const [message, setMessage] = useState('');
+  const [message, setMessage] = useState(false);
   const [details, setDetails] = useState<CheckoutDetails>({
     name: '',
     contact: '',
@@ -23,15 +25,11 @@ export default function Cart() {
     comment: '',
   });
   useMeta('Кошик');
-  const subtotal = cartTotal(shop.cart, products);
-  const fee = shop.assembly ? assemblyFee(subtotal) : 0;
-  const invalid = shop.cart.some((i) => {
-    const p = products.find((p) => p.id === i.productId);
-    return !p || p.status === 'unavailable' || !p.variants.includes(i.variant);
-  });
+  const quote = quoteCart(shop.cart, products, shop.wholesale, shop.assembly);
+  const invalid = quote.lines.some((line) => line.invalid);
   function field(k: keyof CheckoutDetails, value: string) {
     setDetails((s) => ({ ...s, [k]: value }));
-    setMessage('');
+    setMessage(false);
   }
   if (!shop.cart.length)
     return (
@@ -56,11 +54,25 @@ export default function Cart() {
         <p>Перевір комплектацію. Остаточну ціну й строк підтвердить менеджер.</p>
       </div>
       <DemoNotice />
+      <div className="notice">
+        <label className="checkbox-label">
+          <input
+            type="checkbox"
+            checked={shop.wholesale}
+            onChange={(e) => {
+              shop.setWholesale(e.target.checked);
+              setMessage(false);
+            }}
+          />
+          Малий опт — ціни від 3, 5 та 10 шт. однієї моделі
+        </label>
+        Різні варіанти однієї моделі підсумовуються. До 3 шт. діє роздрібна ціна. Якщо ціна
+        потрібного порога не задана — Ціна за запитом; заявку можна сформувати.
+      </div>
       <div className="cart-layout">
         <div>
           <div className="cart-items">
-            {shop.cart.map((item) => {
-              const p = products.find((p) => p.id === item.productId);
+            {quote.lines.map(({ item, product: p, unitPrice, total, threshold }) => {
               return (
                 <article className="cart-item" key={item.key}>
                   <Link className="cart-image" to={p ? `/product/${p.id}` : '/catalog'}>
@@ -87,7 +99,7 @@ export default function Cart() {
                           value={item.variant}
                           onChange={(e) => {
                             shop.variant(item.key, e.target.value);
-                            setMessage('');
+                            setMessage(false);
                           }}
                         >
                           {!p.variants.includes(item.variant) && (
@@ -99,20 +111,37 @@ export default function Cart() {
                         </select>
                       </label>
                     )}
+                    {p && (
+                      <>
+                        <span
+                          className={`stock ${p.status === 'unavailable' ? 'unavailable' : ''}`}
+                        >
+                          <i />
+                          {statusLabels[p.status]}
+                        </span>
+                        <ProductAvailability product={p} />
+                      </>
+                    )}
                     {(!p || p.status === 'unavailable' || !p.variants.includes(item.variant)) && (
                       <p className="error-text">
                         Видали недоступний товар або обери актуальний варіант.
                       </p>
                     )}
-                    <small className="muted">{p ? `${money(p.price)} / шт.` : ''}</small>
+                    <small className="muted">
+                      {threshold ? `Малий опт від ${threshold} шт. / одиницю` : 'Роздріб / одиницю'}
+                      : {unitPrice === null ? 'Ціна за запитом' : money(unitPrice)}
+                    </small>
+                    {p && <WholesalePrices product={p} compact />}
                   </div>
                   <div className="cart-item-controls">
-                    <strong>{money((p?.price || 0) * item.quantity)}</strong>
+                    <strong>{total === null ? 'Ціна за запитом' : money(total)}</strong>
                     <Quantity
                       value={item.quantity}
+                      editable
+                      label={`Кількість ${p?.brand || ''} ${p?.name || item.productId}, ${item.variant}`}
                       onChange={(n) => {
                         shop.quantity(item.key, n);
-                        setMessage('');
+                        setMessage(false);
                       }}
                     />
                     <button
@@ -120,7 +149,7 @@ export default function Cart() {
                       aria-label={`Видалити ${p?.name || 'товар'}`}
                       onClick={() => {
                         shop.remove(item.key);
-                        setMessage('');
+                        setMessage(false);
                       }}
                     >
                       <Trash2 size={15} />
@@ -141,15 +170,21 @@ export default function Cart() {
           <h2>Разом</h2>
           <div>
             <span>Товари</span>
-            <strong>{money(subtotal)}</strong>
+            <strong>{quote.subtotal === null ? 'Ціна за запитом' : money(quote.subtotal)}</strong>
           </div>
+          {quote.unknownLines > 0 && (
+            <p className="muted small">
+              Відома частина: {money(quote.knownSubtotal)}. Це не повна сума; невизначені ціни
+              узгодить менеджер.
+            </p>
+          )}
           <label className="checkbox-label">
             <input
               type="checkbox"
               checked={shop.assembly}
               onChange={(e) => {
                 shop.setAssembly(e.target.checked);
-                setMessage('');
+                setMessage(false);
               }}
             />
             Послуга збірки замовлення
@@ -157,7 +192,13 @@ export default function Cart() {
           {shop.assembly && (
             <div>
               <span>Збірка</span>
-              <strong>{fee ? money(fee) : 'Безкоштовно'}</strong>
+              <strong>
+                {quote.fee === null
+                  ? 'Ціна за запитом'
+                  : quote.fee
+                    ? money(quote.fee)
+                    : 'Безкоштовно'}
+              </strong>
             </div>
           )}
           <small className="muted">
@@ -170,7 +211,7 @@ export default function Cart() {
           </div>
           <div className="summary-total">
             <span>Орієнтовна сума</span>
-            <strong>{money(subtotal + fee)}</strong>
+            <strong>{quote.total === null ? 'Ціна за запитом' : money(quote.total)}</strong>
           </div>
           <button
             className="button primary full-width"
@@ -207,7 +248,7 @@ export default function Cart() {
           <form
             onSubmit={(e) => {
               e.preventDefault();
-              setMessage(formatOrder(shop.cart, products, details, shop.assembly));
+              setMessage(true);
             }}
           >
             <div className="form-grid">
@@ -279,7 +320,11 @@ export default function Cart() {
               Сформувати повідомлення <ArrowRight size={17} />
             </button>
           </form>
-          {message && <OrderComposer text={message} />}
+          {message && (
+            <OrderComposer
+              text={formatOrder(shop.cart, products, details, shop.assembly, shop.wholesale)}
+            />
+          )}
         </section>
       )}
     </div>

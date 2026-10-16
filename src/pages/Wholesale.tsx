@@ -1,12 +1,40 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
+import { toast } from 'sonner';
 import { ArrowRight, Boxes, Layers, MessagesSquare } from 'lucide-react';
 import { Breadcrumbs } from '../components/Common';
 import OrderComposer from '../components/OrderComposer';
-import { siteConfig } from '../config/site';
+import { siteConfig, statusLabels } from '../config/site';
+import { useCatalog, useShop } from '../stores/shop';
+import { productPrice, quoteCart } from '../utils/pricing';
+import { formatOrder } from '../utils/orders';
+import { money } from '../utils/catalog';
+import WholesalePrices, { ProductAvailability } from '../components/WholesalePrices';
 import { useMeta } from '../hooks/useMeta';
 export default function Wholesale() {
   useMeta('Співпраця для магазинів');
-  const [message, setMessage] = useState('');
+  const products = useCatalog();
+  const shop = useShop();
+  const [productId, setProductId] = useState('');
+  const [variant, setVariant] = useState('');
+  const [quantity, setQuantity] = useState(3);
+  const [request, setRequest] = useState<Record<string, string> | null>(null);
+  const product =
+    products.find((p) => p.id === productId) ||
+    products.find((p) => p.status !== 'unavailable') ||
+    products[0];
+  const selectedVariant = product.variants.includes(variant) ? variant : product.variants[0];
+  const price = productPrice(product, quantity, true);
+  const quote = quoteCart(shop.cart, products, true, shop.assembly);
+  const invalid = quote.lines.some((line) => line.invalid);
+  const intro = request
+    ? `Вітаю! Цікавить співпраця з ${siteConfig.name}.\n\nМагазин / профіль: ${request.store}\nКонтактна особа: ${request.person}\nЗв’язок: ${request.contact}\nДодатковий запит: ${request.products || '—'}\nКількість у додатковому запиті: ${request.quantity || '—'}\nКоментар: ${request.comment || '—'}`
+    : '';
+  const message = request
+    ? shop.cart.length
+      ? `${intro}\n\n${formatOrder(shop.cart, products, { name: request.person, contact: request.contact, city: 'Узгодити', delivery: 'Нова пошта — узгодити відділення', comment: request.comment }, shop.assembly, true)}`
+      : `${intro}\n\nПрошу розрахувати комерційну пропозицію. Ціна за запитом. Остаточні строки узгоджуємо перед оплатою. Це заявка, а не підтверджене замовлення.`
+    : '';
   return (
     <div className="container page">
       <Breadcrumbs items={[{ label: 'Співпраця' }]} />
@@ -18,8 +46,9 @@ export default function Wholesale() {
           <span>Грай у команді.</span>
         </h1>
         <p>
-          Інвентар для настільного тенісу для магазинів і клубів. Обговоримо невеликі партії та
-          індивідуальну вартість.
+          Малий опт для продавців Prom.ua, OLX, приватних перепродавців і невеликих
+          інтернет-магазинів. Почніть з невеликої партії та обговоріть вартість напряму з
+          менеджером.
         </p>
         <button
           className="button white"
@@ -40,17 +69,17 @@ export default function Wholesale() {
           {
             icon: Boxes,
             title: 'Невеликі партії',
-            text: 'Вкажіть потрібні моделі й кількість. Мінімальну партію підтвердить менеджер.',
+            text: 'Індивідуальні ціни від 3, 5 і 10 одиниць однієї моделі. Можна поєднувати різні кольори та варіанти.',
           },
           {
             icon: Layers,
             title: 'Повний асортимент',
-            text: 'Накладки, основи, ракетки, м’ячі, чохли, очищувачі й аксесуари.',
+            text: '80 позицій: накладки, основи, м’ячі, чохли, очищувачі й аксесуари. Збирайте змішані партії.',
           },
           {
             icon: MessagesSquare,
             title: 'Індивідуальний розрахунок',
-            text: 'Ціна, знижки та строки — після уточнення запиту й доступності у постачальника.',
+            text: 'Ціна без автоматичних знижок. Якщо її не вказано — Ціна за запитом. Узгодьте умови напряму в Telegram.',
           },
         ].map((x) => (
           <div key={x.title}>
@@ -69,23 +98,128 @@ export default function Wholesale() {
             надішлете його менеджеру.
           </p>
           <div className="notice">
-            Оптову ціну, доступні моделі та строк доставки розраховуємо для конкретної партії.
-            Остаточні умови узгоджуємо перед оплатою.
+            Для товарів під замовлення орієнтир — 20–30 днів. Наявність та остаточні строки
+            узгоджуємо з менеджером перед оплатою. До 3 шт. однієї моделі діє роздрібна ціна.
+          </div>
+          <div className="b2b-picker">
+            <h3>Додати товари до заявки</h3>
+            <div className="form-grid">
+              <label className="span-two">
+                Товар
+                <select
+                  value={product.id}
+                  onChange={(e) => {
+                    setProductId(e.target.value);
+                    setVariant('');
+                    setRequest(null);
+                  }}
+                >
+                  {products.map((p) => (
+                    <option key={p.id} value={p.id}>
+                      {p.brand} {p.name} — {statusLabels[p.status]}
+                    </option>
+                  ))}
+                </select>
+              </label>
+              <label>
+                Варіант
+                <select value={selectedVariant} onChange={(e) => setVariant(e.target.value)}>
+                  {product.variants.map((v) => (
+                    <option key={v}>{v}</option>
+                  ))}
+                </select>
+              </label>
+              <label>
+                Кількість
+                <input
+                  type="number"
+                  min="1"
+                  max="99"
+                  step="1"
+                  value={quantity}
+                  onChange={(e) =>
+                    setQuantity(Math.max(1, Math.min(99, Math.floor(e.target.valueAsNumber) || 1)))
+                  }
+                />
+              </label>
+            </div>
+            <p className="muted small">
+              Роздріб: {money(product.price)} / шт. · {statusLabels[product.status]}
+            </p>
+            <ProductAvailability product={product} />
+            <WholesalePrices product={product} />
+            <p>
+              Для {quantity} шт.:{' '}
+              <strong>
+                {price.unitPrice === null ? 'Ціна за запитом' : `${money(price.unitPrice)} / шт.`}
+              </strong>
+            </p>
+            <button
+              type="button"
+              className="button primary"
+              disabled={product.status === 'unavailable'}
+              onClick={() => {
+                shop.add(product.id, selectedVariant, quantity);
+                shop.setWholesale(true);
+                setRequest(null);
+                toast.success('Додано до оптової заявки');
+              }}
+            >
+              Додати до заявки
+            </button>
+          </div>
+          <div className="b2b-picker" aria-live="polite">
+            <h3>Ваша партія — {shop.cart.reduce((n, i) => n + i.quantity, 0)} шт.</h3>
+            <p className="muted small">
+              До заявки входить увесь поточний кошик. Пороги рахуються окремо для кожної моделі,
+              разом для її варіантів.
+            </p>
+            <ul className="b2b-request-lines">
+              {quote.lines.map((line) => (
+                <li key={line.item.key}>
+                  {line.product ? `${line.product.brand} ${line.product.name}` : 'Товар видалено'} ·{' '}
+                  {line.item.variant} · {line.item.quantity} шт. —{' '}
+                  {line.total === null ? 'Ціна за запитом' : money(line.total)}
+                </li>
+              ))}
+            </ul>
+            {shop.cart.length > 0 && (
+              <>
+                <p>
+                  Попередня сума:{' '}
+                  <strong>{quote.total === null ? 'Ціна за запитом' : money(quote.total)}</strong>
+                </p>
+                {quote.unknownLines > 0 && (
+                  <p className="muted small">
+                    Відома частина товарів: {money(quote.knownSubtotal)}; це не повна сума.
+                  </p>
+                )}
+                <Link className="text-link" to="/cart" onClick={() => shop.setWholesale(true)}>
+                  Змінити кількість у кошику <ArrowRight size={17} />
+                </Link>
+              </>
+            )}
+            {invalid && (
+              <p className="error-text">
+                У кошику є недоступний товар або варіант. Оновіть його перед формуванням заявки.
+              </p>
+            )}
           </div>
         </div>
         <form
-          onChange={() => setMessage('')}
+          onChange={() => setRequest(null)}
           onSubmit={(e) => {
             e.preventDefault();
             const f = new FormData(e.currentTarget);
-            setMessage(
-              `Вітаю! Цікавить співпраця з ${siteConfig.name}.\n\nМагазин: ${f.get('store')}\nКонтактна особа: ${f.get('person')}\nЗв’язок: ${f.get('contact')}\nТовари: ${f.get('products')}\nКількість: ${f.get('quantity')}\nКоментар: ${f.get('comment') || '—'}\n\nПрошу розрахувати комерційну пропозицію та уточнити строки й умови постачання. Це запит, а не підтверджене замовлення.`
+            if (invalid) return;
+            setRequest(
+              Object.fromEntries([...f.entries()].map(([key, value]) => [key, String(value)]))
             );
           }}
         >
           <div className="form-grid">
             <label>
-              Назва магазину
+              Магазин, профіль Prom.ua / OLX або ім’я продавця
               <input name="store" required maxLength={120} />
             </label>
             <label>
@@ -100,14 +234,14 @@ export default function Wholesale() {
               Орієнтовна кількість
               <input
                 name="quantity"
-                required
+                required={!shop.cart.length}
                 placeholder="Наприклад, 10 накладок"
                 maxLength={120}
               />
             </label>
             <label className="span-two">
-              Товари, що цікавлять
-              <textarea name="products" rows={3} required maxLength={2000} />
+              {shop.cart.length ? 'Додаткові товари та побажання' : 'Товари, що цікавлять'}
+              <textarea name="products" rows={3} required={!shop.cart.length} maxLength={2000} />
             </label>
             <label className="span-two">
               Коментар
@@ -118,7 +252,7 @@ export default function Wholesale() {
             <input type="checkbox" required />
             Розумію, що дані потрібно самостійно надіслати у месенджері.
           </label>
-          <button className="button primary">
+          <button className="button primary" disabled={invalid}>
             Підготувати запит <ArrowRight size={17} />
           </button>
         </form>

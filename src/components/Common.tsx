@@ -6,6 +6,7 @@ import { useShop, useCatalog } from '../stores/shop';
 import { money } from '../utils/catalog';
 import { statusLabels, siteConfig } from '../config/site';
 import { ProductImage } from './ProductArt';
+import WholesalePrices, { ProductAvailability } from './WholesalePrices';
 export function ProductCard({ product: p, list = false }: { product: Product; list?: boolean }) {
   const toggle = useShop((s) => s.toggleFavorite);
   const favorite = useShop((s) => s.favorites.includes(p.id));
@@ -37,8 +38,10 @@ export function ProductCard({ product: p, list = false }: { product: Product; li
           <i />
           {statusLabels[p.status]}
         </span>
+        <ProductAvailability product={p} compact />
         <div className="price-row">
           <div>
+            <small>Роздріб / шт.</small>
             <strong>{money(p.price)}</strong>
             {p.demo && <small>тестова ціна</small>}
             {p.priceEstimated && <small>орієнтовна ціна</small>}
@@ -57,6 +60,7 @@ export function ProductCard({ product: p, list = false }: { product: Product; li
             <Plus size={21} />
           </button>
         </div>
+        <WholesalePrices product={p} compact />
       </div>
     </article>
   );
@@ -87,7 +91,17 @@ export function SectionTitle({
     </div>
   );
 }
-export function Quantity({ value, onChange }: { value: number; onChange: (n: number) => void }) {
+export function Quantity({
+  value,
+  onChange,
+  editable = false,
+  label = 'Кількість',
+}: {
+  value: number;
+  onChange: (n: number) => void;
+  editable?: boolean;
+  label?: string;
+}) {
   return (
     <div className="quantity">
       <button
@@ -97,7 +111,19 @@ export function Quantity({ value, onChange }: { value: number; onChange: (n: num
       >
         <Minus size={15} />
       </button>
-      <span aria-live="polite">{value}</span>
+      {editable ? (
+        <input
+          type="number"
+          min="1"
+          max="99"
+          step="1"
+          aria-label={label}
+          value={value}
+          onChange={(e) => onChange(e.target.valueAsNumber)}
+        />
+      ) : (
+        <span aria-live="polite">{value}</span>
+      )}
       <button
         aria-label="Збільшити кількість"
         disabled={value >= 99}

@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Download, Upload, Save, Plus, RotateCcw, Trash2 } from 'lucide-react';
 import { toast } from 'sonner';
 import { useCatalog, useShop } from '../stores/shop';
-import { catalogSchema, type Product, type Category } from '../types/catalog';
+import { catalogSchema, wholesaleThresholds, type Product, type Category } from '../types/catalog';
 import { initialCatalog } from '../data/catalog';
 import { categoryLabels, statusLabels } from '../config/site';
 import { Breadcrumbs } from '../components/Common';
@@ -145,6 +145,9 @@ export default function CatalogEditor() {
                 name: 'Новий товар',
                 brand: 'Вкажіть бренд',
                 price: 0,
+                wholesalePrices: {},
+                status: 'preorder',
+                leadTime: '20–30 днів',
                 popular: false,
                 isNew: false,
                 image: '',
@@ -189,6 +192,28 @@ export default function CatalogEditor() {
                     onChange={(e) => update('price', Number(e.target.value))}
                   />
                 </label>
+                {wholesaleThresholds.map((min) => (
+                  <label key={min}>
+                    Опт від {min} шт., ₴ / одиницю
+                    <input
+                      type="number"
+                      min="0.01"
+                      max="1000000"
+                      step="0.01"
+                      placeholder="Ціна за запитом"
+                      value={p.wholesalePrices[min] ?? ''}
+                      onChange={(e) =>
+                        update('wholesalePrices', {
+                          ...p.wholesalePrices,
+                          [min]: e.target.value === '' ? null : e.target.valueAsNumber,
+                        })
+                      }
+                    />
+                    <small className="muted">
+                      Порожнє поле — запит менеджеру. Ціну задайте після перевірки власних витрат.
+                    </small>
+                  </label>
+                ))}
                 <label>
                   Категорія
                   <select
@@ -214,6 +239,9 @@ export default function CatalogEditor() {
                       </option>
                     ))}
                   </select>
+                  <small className="muted">
+                    «В наявності» встановлюйте лише після підтвердження залишку.
+                  </small>
                 </label>
                 <label>
                   Строк поставки

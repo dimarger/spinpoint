@@ -11,6 +11,8 @@
 - Persistent cart, favorites, theme and local catalog override: `src/stores/shop.ts`.
 - Filtering and currency formatting: `src/utils/catalog.ts`.
 - Order text, messenger links and totals: `src/utils/orders.ts`.
+- Per-model wholesale thresholds, incomplete quotes and assembly pricing: `src/utils/pricing.ts`.
+- Public tier display and preorder terms: `src/components/WholesalePrices.tsx`.
 - Product cards and notices: `src/components/Common.tsx`.
 - Photo display and category illustration fallback: `src/components/ProductArt.tsx`.
 - Homepage: `src/pages/Home.tsx`.
@@ -23,6 +25,7 @@
 - Information pages: `src/pages/Info.tsx`.
 - Styling: `src/styles/index.css`.
 - Focused schema, filter, cart and messenger tests: `src/utils/shop.test.ts`.
+- B2B tier boundaries, mixed variants, incomplete totals and migrations: `src/utils/pricing.test.ts`.
 - Validation: `npm run typecheck`, `npm run lint`, `npm test`, `npm run build`.
 - Local serving: `npm run dev`; production preview: `npm run preview`.
 - Skip generated `dist`, `node_modules`, `.git` and build metadata.

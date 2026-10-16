@@ -3793,3 +3793,73 @@ body {
 .gallery-thumbs {
   flex-wrap: wrap;
 }
+.wholesale-prices {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+  margin-block: 12px;
+  font-size: 12px;
+  line-height: 1.5;
+}
+.wholesale-prices > div {
+  min-width: 0;
+}
+.wholesale-prices span {
+  color: var(--muted);
+}
+.wholesale-prices strong {
+  display: block;
+  font-size: inherit;
+  overflow-wrap: anywhere;
+}
+.product-info .wholesale-prices {
+  grid-template-columns: 1fr;
+  gap: 4px;
+}
+.product-info .wholesale-prices > div {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+.delivery-note,
+.wholesale-note {
+  display: block;
+  font-size: 12px;
+  line-height: 1.5;
+  margin-top: 8px;
+}
+.detail-price > small {
+  display: block;
+  font-size: 12px;
+  letter-spacing: normal;
+}
+.quantity input {
+  width: 40px;
+  min-width: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  text-align: center;
+  appearance: textfield;
+}
+.quantity input::-webkit-inner-spin-button,
+.quantity input::-webkit-outer-spin-button {
+  appearance: none;
+  margin: 0;
+}
+.b2b-picker {
+  margin-top: 24px;
+  padding-top: 20px;
+  border-top: 1px solid var(--line);
+}
+.b2b-picker select {
+  max-width: 100%;
+}
+.b2b-request-lines {
+  padding-left: 18px;
+  font-size: 12px;
+  overflow-wrap: anywhere;
+}

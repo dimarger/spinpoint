@@ -7,7 +7,7 @@
     "price": 329,
     "priceEstimated": false,
     "status": "preorder",
-    "leadTime": "Термін узгоджуємо перед оплатою",
+    "leadTime": "20–30 днів",
     "description": "Тренувальна гладка накладка з губкою приблизно 2,2 мм. Поверхня слабколипка, губка середньої м’якості. Доступність обраного варіанта підтверджує менеджер.",
     "variants": ["Чорний", "Червоний"],
     "specs": {
@@ -18,7 +18,8 @@
     "isNew": false,
     "image": "images/products/kokutaku-868-training-502.webp",
     "demo": false,
-    "addedAt": "2026-10-14"
+    "addedAt": "2026-10-14",
+    "wholesalePrices": {}
   },
   {
     "id": "yinhe-mercury-ii-458",
@@ -28,7 +29,7 @@
     "price": 329,
     "priceEstimated": false,
     "status": "preorder",
-    "leadTime": "Термін узгоджуємо перед оплатою",
+    "leadTime": "20–30 днів",
     "description": "Бюджетна гладка накладка. У картці доступні м’яка та середня губка. Доступність обраного варіанта підтверджує менеджер.",
     "variants": ["Чорний - Середня", "Чорний - М’яка", "Червоний - Середня", "Червоний - М’яка"],
     "specs": {
@@ -39,7 +40,8 @@
     "isNew": false,
     "image": "images/products/yinhe-mercury-ii-458.webp",
     "demo": false,
-    "addedAt": "2026-10-14"
+    "addedAt": "2026-10-14",
+    "wholesalePrices": {}
   },
   {
     "id": "palio-ck531a-ox-245",
@@ -49,7 +51,7 @@
     "price": 299,
     "priceEstimated": false,
     "status": "preorder",
-    "leadTime": "Термін узгоджуємо перед оплатою",
+    "leadTime": "20–30 днів",
     "description": "Довгі шипи OX без губки для захисної гри. Доступність обраного варіанта підтверджує менеджер.",
     "variants": ["Чорний", "Червоний"],
     "specs": {
@@ -61,7 +63,8 @@
     "isNew": false,
     "image": "images/products/palio-ck531a-ox-245.webp",
     "demo": false,
-    "addedAt": "2026-10-14"
+    "addedAt": "2026-10-14",
+    "wholesalePrices": {}
   },
   {
     "id": "yinhe-neptune-long-pips-303",
@@ -71,7 +74,7 @@
     "price": 399,
     "priceEstimated": false,
     "status": "preorder",
-    "leadTime": "Термін узгоджуємо перед оплатою",
+    "leadTime": "20–30 днів",
     "description": "Довгі шипи для захисної та контратакувальної гри. Заявлена губка 0,7 мм. Доступність обраного варіанта підтверджує менеджер.",
     "variants": ["Чорний", "Червоний"],
     "specs": {
@@ -82,7 +85,8 @@
     "isNew": false,
     "image": "images/products/yinhe-neptune-long-pips-303.webp",
     "demo": false,
-    "addedAt": "2026-10-14"
+    "addedAt": "2026-10-14",
+    "wholesalePrices": {}
   },
   {
     "id": "reactor-tornado-v5-949",
@@ -92,7 +96,7 @@
     "price": 449,
     "priceEstimated": false,
     "status": "preorder",
-    "leadTime": "Термін узгоджуємо перед оплатою",
+    "leadTime": "20–30 днів",
     "description": "Гладка накладка для топспіну й атаки. Середньожорстка губка, товщина Max. Доступність обраного варіанта підтверджує менеджер.",
     "variants": ["Чорний / Середньожорстка", "Червоний / Середньожорстка"],
     "specs": {
@@ -103,7 +107,8 @@
     "isNew": false,
     "image": "images/products/reactor-tornado-v5-949.webp",
     "demo": false,
-    "addedAt": "2026-10-14"
+    "addedAt": "2026-10-14",
+    "wholesalePrices": {}
   },
   {
     "id": "double-fish-1615-ox-1307",
@@ -113,7 +118,7 @@
     "price": 349,
     "priceEstimated": false,
     "status": "preorder",
-    "leadTime": "Термін узгоджуємо перед оплатою",
+    "leadTime": "20–30 днів",
     "description": "Довгі шипи 1615 у виконанні OX без губки. Доступність обраного варіанта підтверджує менеджер.",
     "variants": ["Чорний / OX — без губки", "Червоний / OX — без губки"],
     "specs": {
@@ -125,7 +130,8 @@
     "isNew": false,
     "image": "images/products/double-fish-1615-ox-1307.webp",
     "demo": false,
-    "addedAt": "2026-10-14"
+    "addedAt": "2026-10-14",
+    "wholesalePrices": {}
   },
   {
     "id": "729-cross-1314",
@@ -135,7 +141,7 @@
     "price": 349,
     "priceEstimated": false,
     "status": "preorder",
-    "leadTime": "Термін узгоджуємо перед оплатою",
+    "leadTime": "20–30 днів",
     "description": "Гладка накладка класичної конструкції. У картці є жорсткість 42°, 44° та 46°. Доступність обраного варіанта підтверджує менеджер.",
     "variants": [
       "Чорний / 42",
@@ -153,7 +159,8 @@
     "isNew": false,
     "image": "images/products/729-cross-1314.webp",
     "demo": false,
-    "addedAt": "2026-10-14"
+    "addedAt": "2026-10-14",
+    "wholesalePrices": {}
   },
   {
     "id": "ktl-pro-xp-125",
@@ -163,7 +170,7 @@
     "price": 399,
     "priceEstimated": false,
     "status": "preorder",
-    "leadTime": "Термін узгоджуємо перед оплатою",
+    "leadTime": "20–30 днів",
     "description": "Легка гладка накладка з еластичною поверхнею для топспіну та контратаки. Доступність обраного варіанта підтверджує менеджер.",
     "variants": ["Чорний", "Червоний"],
     "specs": {
@@ -174,7 +181,8 @@
     "isNew": false,
     "image": "images/products/ktl-pro-xp-125.webp",
     "demo": false,
-    "addedAt": "2026-10-14"
+    "addedAt": "2026-10-14",
+    "wholesalePrices": {}
   },
   {
     "id": "ktl-pro-xt-126",
@@ -184,7 +192,7 @@
     "price": 399,
     "priceEstimated": false,
     "status": "preorder",
-    "leadTime": "Термін узгоджуємо перед оплатою",
+    "leadTime": "20–30 днів",
     "description": "Легка гладка накладка з липкою поверхнею для гри з обертанням біля столу. Доступність обраного варіанта підтверджує менеджер.",
     "variants": ["Чорний", "Червоний"],
     "specs": {
@@ -195,7 +203,8 @@
     "isNew": false,
     "image": "images/products/ktl-pro-xt-126.webp",
     "demo": false,
-    "addedAt": "2026-10-14"
+    "addedAt": "2026-10-14",
+    "wholesalePrices": {}
   },
   {
     "id": "reactor-ckylin-948",
@@ -205,7 +214,7 @@
     "price": 449,
     "priceEstimated": false,
     "status": "preorder",
-    "leadTime": "Термін узгоджуємо перед оплатою",
+    "leadTime": "20–30 днів",
     "description": "Гладка накладка Ckylin із синьою губкою. Доступні середньом’яка та середньожорстка версії. Доступність обраного варіанта підтверджує менеджер.",
     "variants": [
       "Чорний / Середньожорстка",
@@ -221,7 +230,8 @@
     "isNew": false,
     "image": "images/products/reactor-ckylin-948.webp",
     "demo": false,
-    "addedAt": "2026-10-14"
+    "addedAt": "2026-10-14",
+    "wholesalePrices": {}
   },
   {
     "id": "yinhe-qing-long-824",
@@ -231,7 +241,7 @@
     "price": 449,
     "priceEstimated": false,
     "status": "preorder",
-    "leadTime": "Термін узгоджуємо перед оплатою",
+    "leadTime": "20–30 днів",
     "description": "Довгі шипи для захисту та контратаки. Є виконання OX без губки, а також 0,5 та 0,7 мм. Доступність обраного варіанта підтверджує менеджер.",
     "variants": [
       "Чорний / 0.5",
@@ -249,7 +259,8 @@
     "isNew": false,
     "image": "images/products/yinhe-qing-long-824.webp",
     "demo": false,
-    "addedAt": "2026-10-14"
+    "addedAt": "2026-10-14",
+    "wholesalePrices": {}
   },
   {
     "id": "palio-cj8000-biotech-39-41-231",
@@ -259,7 +270,7 @@
     "price": 379,
     "priceEstimated": false,
     "status": "preorder",
-    "leadTime": "Термін узгоджуємо перед оплатою",
+    "leadTime": "20–30 днів",
     "description": "Гладка напівлипка накладка CJ8000 із губкою Biotech 39–41°. Розрахована на гру з обертанням; точну товщину підтверджуємо до оплати. Доступність обраного варіанта підтверджує менеджер.",
     "variants": ["Чорний", "Червоний"],
     "specs": {
@@ -271,7 +282,8 @@
     "isNew": false,
     "image": "images/products/palio-cj8000-biotech-39-41-231.webp",
     "demo": false,
-    "addedAt": "2026-10-14"
+    "addedAt": "2026-10-14",
+    "wholesalePrices": {}
   },
   {
     "id": "palio-cj8000-biotech-36-38-227",
@@ -281,7 +293,7 @@
     "price": 379,
     "priceEstimated": false,
     "status": "preorder",
-    "leadTime": "Термін узгоджуємо перед оплатою",
+    "leadTime": "20–30 днів",
     "description": "Гладка напівлипка накладка CJ8000 із губкою Biotech 36–38°. Розрахована на гру з обертанням; точну товщину підтверджуємо до оплати. Доступність обраного варіанта підтверджує менеджер.",
     "variants": ["Чорний", "Червоний"],
     "specs": {
@@ -293,7 +305,8 @@
     "isNew": false,
     "image": "images/products/palio-cj8000-biotech-36-38-227.webp",
     "demo": false,
-    "addedAt": "2026-10-14"
+    "addedAt": "2026-10-14",
+    "wholesalePrices": {}
   },
   {
     "id": "palio-cj8000-biotech-40-42-566",
@@ -303,7 +316,7 @@
     "price": 379,
     "priceEstimated": false,
     "status": "preorder",
-    "leadTime": "Термін узгоджуємо перед оплатою",
+    "leadTime": "20–30 днів",
     "description": "Гладка напівлипка накладка CJ8000 із губкою Biotech 40–42°. Розрахована на гру з обертанням; точну товщину підтверджуємо до оплати. Доступність обраного варіанта підтверджує менеджер.",
     "variants": ["Чорний", "Червоний"],
     "specs": {
@@ -315,7 +328,8 @@
     "isNew": false,
     "image": "images/products/palio-cj8000-biotech-40-42-566.webp",
     "demo": false,
-    "addedAt": "2026-10-14"
+    "addedAt": "2026-10-14",
+    "wholesalePrices": {}
   },
   {
     "id": "palio-cj8000-biotech-42-44-228",
@@ -325,7 +339,7 @@
     "price": 379,
     "priceEstimated": false,
     "status": "preorder",
-    "leadTime": "Термін узгоджуємо перед оплатою",
+    "leadTime": "20–30 днів",
     "description": "Гладка напівлипка накладка CJ8000 із губкою Biotech 42–44°. Розрахована на гру з обертанням; точну товщину підтверджуємо до оплати. Доступність обраного варіанта підтверджує менеджер.",
     "variants": ["Чорний", "Червоний"],
     "specs": {
@@ -337,7 +351,8 @@
     "isNew": false,
     "image": "images/products/palio-cj8000-biotech-42-44-228.webp",
     "demo": false,
-    "addedAt": "2026-10-14"
+    "addedAt": "2026-10-14",
+    "wholesalePrices": {}
   },
   {
     "id": "palio-emperor-dragon-417",
@@ -347,7 +362,7 @@
     "price": 499,
     "priceEstimated": false,
     "status": "preorder",
-    "leadTime": "Термін узгоджуємо перед оплатою",
+    "leadTime": "20–30 днів",
     "description": "Гладка накладка Palio Emperor Dragon для настільного тенісу. Колір і доступне виконання обираються у списку варіантів. Доступність обраного варіанта підтверджує менеджер.",
     "variants": ["Чорний", "Червоний"],
     "specs": {
@@ -358,7 +373,8 @@
     "isNew": false,
     "image": "images/products/palio-emperor-dragon-417.webp",
     "demo": false,
-    "addedAt": "2026-10-14"
+    "addedAt": "2026-10-14",
+    "wholesalePrices": {}
   },
   {
     "id": "palio-drunken-dragon-418",
@@ -368,7 +384,7 @@
     "price": 599,
     "priceEstimated": false,
     "status": "preorder",
-    "leadTime": "Термін узгоджуємо перед оплатою",
+    "leadTime": "20–30 днів",
     "description": "Гладка накладка Palio Drunken Dragon для настільного тенісу. Колір і доступне виконання обираються у списку варіантів. Доступність обраного варіанта підтверджує менеджер.",
     "variants": ["Чорний", "Червоний"],
     "specs": {
@@ -379,7 +395,8 @@
     "isNew": false,
     "image": "images/products/palio-drunken-dragon-418.webp",
     "demo": false,
-    "addedAt": "2026-10-14"
+    "addedAt": "2026-10-14",
+    "wholesalePrices": {}
   },
   {
     "id": "palio-hadou-biotech-1069",
@@ -389,7 +406,7 @@
     "price": 599,
     "priceEstimated": false,
     "status": "preorder",
-    "leadTime": "Термін узгоджуємо перед оплатою",
+    "leadTime": "20–30 днів",
     "description": "Гладка накладка Hadou Biotech із губкою 2,2 мм та жорсткістю 45–47°. Доступність обраного варіанта підтверджує менеджер.",
     "variants": ["Чорний / 45-47 / 2.2", "Червоний / 45-47 / 2.2"],
     "specs": {
@@ -400,7 +417,8 @@
     "isNew": false,
     "image": "images/products/palio-hadou-biotech-1069.webp",
     "demo": false,
-    "addedAt": "2026-10-14"
+    "addedAt": "2026-10-14",
+    "wholesalePrices": {}
   },
   {
     "id": "yinhe-mars-ii-487",
@@ -410,7 +428,7 @@
     "price": 449,
     "priceEstimated": false,
     "status": "preorder",
-    "leadTime": "Термін узгоджуємо перед оплатою",
+    "leadTime": "20–30 днів",
     "description": "Гладка накладка Yinhe Mars II для настільного тенісу. Колір і доступне виконання обираються у списку варіантів. Доступність обраного варіанта підтверджує менеджер.",
     "variants": ["Чорний / Середня", "Чорний / М’яка", "Червоний / Середня", "Червоний / М’яка"],
     "specs": {
@@ -421,7 +439,8 @@
     "isNew": false,
     "image": "images/products/yinhe-mars-ii-487.webp",
     "demo": false,
-    "addedAt": "2026-10-14"
+    "addedAt": "2026-10-14",
+    "wholesalePrices": {}
   },
   {
     "id": "ktl-stranger-ox-605",
@@ -431,7 +450,7 @@
     "price": 449,
     "priceEstimated": false,
     "status": "preorder",
-    "leadTime": "Термін узгоджуємо перед оплатою",
+    "leadTime": "20–30 днів",
     "description": "Довгі шипи OX без губки. Доступність обраного варіанта підтверджує менеджер.",
     "variants": ["Чорний", "Червоний"],
     "specs": {
@@ -443,7 +462,8 @@
     "isNew": false,
     "image": "images/products/ktl-stranger-ox-605.webp",
     "demo": false,
-    "addedAt": "2026-10-14"
+    "addedAt": "2026-10-14",
+    "wholesalePrices": {}
   },
   {
     "id": "palio-hidden-dragon-152",
@@ -453,7 +473,7 @@
     "price": 649,
     "priceEstimated": false,
     "status": "preorder",
-    "leadTime": "Термін узгоджуємо перед оплатою",
+    "leadTime": "20–30 днів",
     "description": "Гладка накладка Palio Hidden Dragon для настільного тенісу. Колір і доступне виконання обираються у списку варіантів. Доступність обраного варіанта підтверджує менеджер.",
     "variants": ["Чорний", "Червоний"],
     "specs": {
@@ -464,7 +484,8 @@
     "isNew": false,
     "image": "images/products/palio-hidden-dragon-152.webp",
     "demo": false,
-    "addedAt": "2026-10-14"
+    "addedAt": "2026-10-14",
+    "wholesalePrices": {}
   },
   {
     "id": "kokutaku-sonic-boom-1492",
@@ -474,7 +495,7 @@
     "price": 549,
     "priceEstimated": false,
     "status": "preorder",
-    "leadTime": "Термін узгоджуємо перед оплатою",
+    "leadTime": "20–30 днів",
     "description": "Гладка накладка Kokutaku Sonic Boom для настільного тенісу. Колір і доступне виконання обираються у списку варіантів. Доступність обраного варіанта підтверджує менеджер.",
     "variants": ["Чорний", "Червоний"],
     "specs": {
@@ -485,7 +506,8 @@
     "isNew": false,
     "image": "images/products/kokutaku-sonic-boom-1492.webp",
     "demo": false,
-    "addedAt": "2026-10-14"
+    "addedAt": "2026-10-14",
+    "wholesalePrices": {}
   },
   {
     "id": "reactor-thunder-953",
@@ -495,7 +517,7 @@
     "price": 499,
     "priceEstimated": false,
     "status": "preorder",
-    "leadTime": "Термін узгоджуємо перед оплатою",
+    "leadTime": "20–30 днів",
     "description": "Гладка накладка Thunder з липкою поверхнею та середньожорсткою губкою. Доступність обраного варіанта підтверджує менеджер.",
     "variants": ["Чорний / Середньожорстка", "Червоний / Середньожорстка"],
     "specs": {
@@ -506,7 +528,8 @@
     "isNew": false,
     "image": "images/products/reactor-thunder-953.webp",
     "demo": false,
-    "addedAt": "2026-10-14"
+    "addedAt": "2026-10-14",
+    "wholesalePrices": {}
   },
   {
     "id": "reactor-ckylin-pro-950",
@@ -516,7 +539,7 @@
     "price": 549,
     "priceEstimated": false,
     "status": "preorder",
-    "leadTime": "Термін узгоджуємо перед оплатою",
+    "leadTime": "20–30 днів",
     "description": "Гладка накладка Ckylin Pro із синьою губкою. Доступні середньом’яка та середньожорстка версії. Доступність обраного варіанта підтверджує менеджер.",
     "variants": [
       "Чорний / Середньожорстка",
@@ -532,7 +555,8 @@
     "isNew": false,
     "image": "images/products/reactor-ckylin-pro-950.webp",
     "demo": false,
-    "addedAt": "2026-10-14"
+    "addedAt": "2026-10-14",
+    "wholesalePrices": {}
   },
   {
     "id": "729-focus-i-129",
@@ -542,7 +566,7 @@
     "price": 449,
     "priceEstimated": false,
     "status": "preorder",
-    "leadTime": "Термін узгоджуємо перед оплатою",
+    "leadTime": "20–30 днів",
     "description": "Гладка накладка Focus I для гри з обертанням. Параметри губки узгоджуємо перед замовленням. Доступність обраного варіанта підтверджує менеджер.",
     "variants": ["Чорний", "Червоний"],
     "specs": {
@@ -553,7 +577,8 @@
     "isNew": false,
     "image": "images/products/729-focus-i-129.webp",
     "demo": false,
-    "addedAt": "2026-10-14"
+    "addedAt": "2026-10-14",
+    "wholesalePrices": {}
   },
   {
     "id": "729-gs-geo-spin-1577",
@@ -563,7 +588,7 @@
     "price": 449,
     "priceEstimated": false,
     "status": "preorder",
-    "leadTime": "Термін узгоджуємо перед оплатою",
+    "leadTime": "20–30 днів",
     "description": "Гладка накладка з напівлипкою поверхнею. Є середньом’яка та середньожорстка губка. Доступність обраного варіанта підтверджує менеджер.",
     "variants": [
       "Чорний / Середньожорстка",
@@ -579,7 +604,8 @@
     "isNew": false,
     "image": "images/products/729-gs-geo-spin-1577.webp",
     "demo": false,
-    "addedAt": "2026-10-14"
+    "addedAt": "2026-10-14",
+    "wholesalePrices": {}
   },
   {
     "id": "palio-cj8000-tension-looping-118",
@@ -589,7 +615,7 @@
     "price": 449,
     "priceEstimated": false,
     "status": "preorder",
-    "leadTime": "Термін узгоджуємо перед оплатою",
+    "leadTime": "20–30 днів",
     "description": "Гладка накладка Palio CJ8000 Tension Looping для настільного тенісу. Колір і доступне виконання обираються у списку варіантів. Доступність обраного варіанта підтверджує менеджер.",
     "variants": ["Чорний", "Червоний"],
     "specs": {
@@ -600,7 +626,8 @@
     "isNew": false,
     "image": "images/products/palio-cj8000-tension-looping-118.webp",
     "demo": false,
-    "addedAt": "2026-10-14"
+    "addedAt": "2026-10-14",
+    "wholesalePrices": {}
   },
   {
     "id": "729-804-anti-spin-250",
@@ -610,7 +637,7 @@
     "price": 499,
     "priceEstimated": false,
     "status": "preorder",
-    "leadTime": "Термін узгоджуємо перед оплатою",
+    "leadTime": "20–30 днів",
     "description": "Антиспінова накладка 804. Варіанти в поточній картці мають губку 2,0 мм. Доступність обраного варіанта підтверджує менеджер.",
     "variants": ["Чорний 2.0", "Червоний 2.0"],
     "specs": {
@@ -621,7 +648,8 @@
     "isNew": false,
     "image": "images/products/729-804-anti-spin-250.webp",
     "demo": false,
-    "addedAt": "2026-10-14"
+    "addedAt": "2026-10-14",
+    "wholesalePrices": {}
   },
   {
     "id": "palio-ak47-yellow-1066",
@@ -631,7 +659,7 @@
     "price": 599,
     "priceEstimated": false,
     "status": "preorder",
-    "leadTime": "Термін узгоджуємо перед оплатою",
+    "leadTime": "20–30 днів",
     "description": "Гладка накладка з губкою 42–44° та товщиною 2,2 мм. Yellow позначає серію губки, колір поверхні обирається окремо. Доступність обраного варіанта підтверджує менеджер.",
     "variants": ["Чорний / 42-44 / 2.2", "Червоний / 42-44 / 2.2"],
     "specs": {
@@ -642,7 +670,8 @@
     "isNew": false,
     "image": "images/products/palio-ak47-yellow-1066.webp",
     "demo": false,
-    "addedAt": "2026-10-14"
+    "addedAt": "2026-10-14",
+    "wholesalePrices": {}
   },
   {
     "id": "palio-hk1997-gold-1065",
@@ -652,7 +681,7 @@
     "price": 699,
     "priceEstimated": false,
     "status": "preorder",
-    "leadTime": "Термін узгоджуємо перед оплатою",
+    "leadTime": "20–30 днів",
     "description": "Липка гладка накладка з жорсткою губкою 48–50° та товщиною 2,2 мм. Доступність обраного варіанта підтверджує менеджер.",
     "variants": ["Чорний / 48-50 / 2.2", "Червоний / 48-50 / 2.2"],
     "specs": {
@@ -663,7 +692,8 @@
     "isNew": false,
     "image": "images/products/palio-hk1997-gold-1065.webp",
     "demo": false,
-    "addedAt": "2026-10-14"
+    "addedAt": "2026-10-14",
+    "wholesalePrices": {}
   },
   {
     "id": "kokutaku-bao-chong-wang-1269",
@@ -673,7 +703,7 @@
     "price": 649,
     "priceEstimated": false,
     "status": "preorder",
-    "leadTime": "Термін узгоджуємо перед оплатою",
+    "leadTime": "20–30 днів",
     "description": "Гладка накладка Kokutaku Bao Chong Wang для настільного тенісу. Колір і доступне виконання обираються у списку варіантів. Доступність обраного варіанта підтверджує менеджер.",
     "variants": ["Чорний", "Червоний"],
     "specs": {
@@ -684,7 +714,8 @@
     "isNew": false,
     "image": "images/products/kokutaku-bao-chong-wang-1269.webp",
     "demo": false,
-    "addedAt": "2026-10-14"
+    "addedAt": "2026-10-14",
+    "wholesalePrices": {}
   },
   {
     "id": "kokutaku-bao-da-wang-1272",
@@ -694,7 +725,7 @@
     "price": 649,
     "priceEstimated": false,
     "status": "preorder",
-    "leadTime": "Термін узгоджуємо перед оплатою",
+    "leadTime": "20–30 днів",
     "description": "Гладка накладка Kokutaku Bao Da Wang для настільного тенісу. Колір і доступне виконання обираються у списку варіантів. Доступність обраного варіанта підтверджує менеджер.",
     "variants": ["Чорний", "Червоний"],
     "specs": {
@@ -705,7 +736,8 @@
     "isNew": false,
     "image": "images/products/kokutaku-bao-da-wang-1272.webp",
     "demo": false,
-    "addedAt": "2026-10-14"
+    "addedAt": "2026-10-14",
+    "wholesalePrices": {}
   },
   {
     "id": "kokutaku-hu-quan-wang-1270",
@@ -715,7 +747,7 @@
     "price": 649,
     "priceEstimated": false,
     "status": "preorder",
-    "leadTime": "Термін узгоджуємо перед оплатою",
+    "leadTime": "20–30 днів",
     "description": "Гладка накладка Kokutaku Hu Quan Wang для настільного тенісу. Колір і доступне виконання обираються у списку варіантів. Доступність обраного варіанта підтверджує менеджер.",
     "variants": ["Чорний", "Червоний"],
     "specs": {
@@ -726,7 +758,8 @@
     "isNew": false,
     "image": "images/products/kokutaku-hu-quan-wang-1270.webp",
     "demo": false,
-    "addedAt": "2026-10-14"
+    "addedAt": "2026-10-14",
+    "wholesalePrices": {}
   },
   {
     "id": "kokutaku-kuai-gong-wang-1271",
@@ -736,7 +769,7 @@
     "price": 649,
     "priceEstimated": false,
     "status": "preorder",
-    "leadTime": "Термін узгоджуємо перед оплатою",
+    "leadTime": "20–30 днів",
     "description": "Гладка накладка Kokutaku Kuai Gong Wang для настільного тенісу. Колір і доступне виконання обираються у списку варіантів. Доступність обраного варіанта підтверджує менеджер.",
     "variants": ["Чорний", "Червоний"],
     "specs": {
@@ -747,7 +780,8 @@
     "isNew": false,
     "image": "images/products/kokutaku-kuai-gong-wang-1271.webp",
     "demo": false,
-    "addedAt": "2026-10-14"
+    "addedAt": "2026-10-14",
+    "wholesalePrices": {}
   },
   {
     "id": "yinhe-m-star-attack-1267",
@@ -757,7 +791,7 @@
     "price": 549,
     "priceEstimated": false,
     "status": "preorder",
-    "leadTime": "Термін узгоджуємо перед оплатою",
+    "leadTime": "20–30 днів",
     "description": "Гладка накладка Yinhe M Star Attack для настільного тенісу. Колір і доступне виконання обираються у списку варіантів. Доступність обраного варіанта підтверджує менеджер.",
     "variants": [
       "Чорний / 37 2.1",
@@ -777,7 +811,8 @@
     "isNew": false,
     "image": "images/products/yinhe-m-star-attack-1267.webp",
     "demo": false,
-    "addedAt": "2026-10-14"
+    "addedAt": "2026-10-14",
+    "wholesalePrices": {}
   },
   {
     "id": "palio-ak47-blue-1067",
@@ -787,7 +822,7 @@
     "price": 699,
     "priceEstimated": false,
     "status": "preorder",
-    "leadTime": "Термін узгоджуємо перед оплатою",
+    "leadTime": "20–30 днів",
     "description": "Гладка накладка серії Blue з губкою 2,2 мм. Колір поверхні обирається окремо. Доступність обраного варіанта підтверджує менеджер.",
     "variants": ["Чорний / 2.2", "Червоний / 2.2"],
     "specs": {
@@ -798,7 +833,8 @@
     "isNew": false,
     "image": "images/products/palio-ak47-blue-1067.webp",
     "demo": false,
-    "addedAt": "2026-10-14"
+    "addedAt": "2026-10-14",
+    "wholesalePrices": {}
   },
   {
     "id": "729-hunyuan-1573",
@@ -808,7 +844,7 @@
     "price": 699,
     "priceEstimated": false,
     "status": "preorder",
-    "leadTime": "Термін узгоджуємо перед оплатою",
+    "leadTime": "20–30 днів",
     "description": "Гладка накладка з губкою 2,1 мм. Доступні середньом’яка та середньожорстка версії. Доступність обраного варіанта підтверджує менеджер.",
     "variants": [
       "Чорний / Середньожорстка / 2.1",
@@ -824,7 +860,8 @@
     "isNew": true,
     "image": "images/products/729-hunyuan-1573.webp",
     "demo": false,
-    "addedAt": "2026-10-14"
+    "addedAt": "2026-10-14",
+    "wholesalePrices": {}
   },
   {
     "id": "palio-ak47-red-1068",
@@ -834,7 +871,7 @@
     "price": 699,
     "priceEstimated": false,
     "status": "preorder",
-    "leadTime": "Термін узгоджуємо перед оплатою",
+    "leadTime": "20–30 днів",
     "description": "Гладка накладка з губкою 45–47° та товщиною 2,2 мм. Red позначає серію, є чорна та червона поверхня. Доступність обраного варіанта підтверджує менеджер.",
     "variants": ["Чорний / 45-47 / 2.2", "Червоний / 45-47 / 2.2"],
     "specs": {
@@ -845,7 +882,8 @@
     "isNew": false,
     "image": "images/products/palio-ak47-red-1068.webp",
     "demo": false,
-    "addedAt": "2026-10-14"
+    "addedAt": "2026-10-14",
+    "wholesalePrices": {}
   },
   {
     "id": "palio-cj8000-pro-1064",
@@ -855,7 +893,7 @@
     "price": 499,
     "priceEstimated": false,
     "status": "preorder",
-    "leadTime": "Термін узгоджуємо перед оплатою",
+    "leadTime": "20–30 днів",
     "description": "Липка гладка накладка з губкою 2,2 мм. Доступна жорсткість 42–44° або 45–47°. Доступність обраного варіанта підтверджує менеджер.",
     "variants": [
       "Чорний / 42-44 / 2.2",
@@ -871,7 +909,8 @@
     "isNew": true,
     "image": "images/products/palio-cj8000-pro-1064.webp",
     "demo": false,
-    "addedAt": "2026-10-14"
+    "addedAt": "2026-10-14",
+    "wholesalePrices": {}
   },
   {
     "id": "yinhe-moon-478",
@@ -881,7 +920,7 @@
     "price": 499,
     "priceEstimated": false,
     "status": "preorder",
-    "leadTime": "Термін узгоджуємо перед оплатою",
+    "leadTime": "20–30 днів",
     "description": "Гладка накладка Yinhe Moon для настільного тенісу. Колір і доступне виконання обираються у списку варіантів. Доступність обраного варіанта підтверджує менеджер.",
     "variants": [
       "Чорний / Жорстка",
@@ -899,7 +938,8 @@
     "isNew": false,
     "image": "images/products/yinhe-moon-478.webp",
     "demo": false,
-    "addedAt": "2026-10-14"
+    "addedAt": "2026-10-14",
+    "wholesalePrices": {}
   },
   {
     "id": "yinhe-mercury-storm-1143",
@@ -909,7 +949,7 @@
     "price": 549,
     "priceEstimated": false,
     "status": "preorder",
-    "leadTime": "Термін узгоджуємо перед оплатою",
+    "leadTime": "20–30 днів",
     "description": "Гладка накладка Yinhe Mercury Storm для настільного тенісу. Колір і доступне виконання обираються у списку варіантів. Доступність обраного варіанта підтверджує менеджер.",
     "variants": ["Чорний"],
     "specs": {
@@ -920,7 +960,8 @@
     "isNew": false,
     "image": "images/products/yinhe-mercury-storm-1143.webp",
     "demo": false,
-    "addedAt": "2026-10-14"
+    "addedAt": "2026-10-14",
+    "wholesalePrices": {}
   },
   {
     "id": "729-focus-iii-energy-aggregation-902",
@@ -930,7 +971,7 @@
     "price": 649,
     "priceEstimated": false,
     "status": "preorder",
-    "leadTime": "Термін узгоджуємо перед оплатою",
+    "leadTime": "20–30 днів",
     "description": "Гладка накладка Focus III Energy Aggregation. У перевіреному переліку варіантів є чорний колір. Доступність обраного варіанта підтверджує менеджер.",
     "variants": ["Чорний"],
     "specs": {
@@ -941,7 +982,8 @@
     "isNew": false,
     "image": "images/products/729-focus-iii-energy-aggregation-902.webp",
     "demo": false,
-    "addedAt": "2026-10-14"
+    "addedAt": "2026-10-14",
+    "wholesalePrices": {}
   },
   {
     "id": "729-dragon-f-1083",
@@ -951,7 +993,7 @@
     "price": 849,
     "priceEstimated": false,
     "status": "preorder",
-    "leadTime": "Термін узгоджуємо перед оплатою",
+    "leadTime": "20–30 днів",
     "description": "Гладка накладка Dragon-F. Доступні середньом’яка та середньожорстка губка. Доступність обраного варіанта підтверджує менеджер.",
     "variants": [
       "Чорний / Середньожорстка",
@@ -967,7 +1009,8 @@
     "isNew": false,
     "image": "images/products/729-dragon-f-1083.webp",
     "demo": false,
-    "addedAt": "2026-10-14"
+    "addedAt": "2026-10-14",
+    "wholesalePrices": {}
   },
   {
     "id": "729-dragon-l-1082",
@@ -977,7 +1020,7 @@
     "price": 749,
     "priceEstimated": false,
     "status": "preorder",
-    "leadTime": "Термін узгоджуємо перед оплатою",
+    "leadTime": "20–30 днів",
     "description": "Гладка накладка Dragon-L. Доступні м’яка та середньом’яка губка. Доступність обраного варіанта підтверджує менеджер.",
     "variants": [
       "Чорний / М’яка",
@@ -993,7 +1036,8 @@
     "isNew": false,
     "image": "images/products/729-dragon-l-1082.webp",
     "demo": false,
-    "addedAt": "2026-10-14"
+    "addedAt": "2026-10-14",
+    "wholesalePrices": {}
   },
   {
     "id": "yinhe-mercury-iii-asia-963",
@@ -1003,7 +1047,7 @@
     "price": 599,
     "priceEstimated": false,
     "status": "preorder",
-    "leadTime": "Термін узгоджуємо перед оплатою",
+    "leadTime": "20–30 днів",
     "description": "Гладка накладка Yinhe Mercury III Asia для настільного тенісу. Колір і доступне виконання обираються у списку варіантів. Доступність обраного варіанта підтверджує менеджер.",
     "variants": ["Чорний - М’яка / Max", "Червоний - М’яка / Max"],
     "specs": {
@@ -1014,7 +1058,8 @@
     "isNew": false,
     "image": "images/products/yinhe-mercury-iii-asia-963.webp",
     "demo": false,
-    "addedAt": "2026-10-14"
+    "addedAt": "2026-10-14",
+    "wholesalePrices": {}
   },
   {
     "id": "729-729-08-219",
@@ -1024,7 +1069,7 @@
     "price": 649,
     "priceEstimated": false,
     "status": "preorder",
-    "leadTime": "Термін узгоджуємо перед оплатою",
+    "leadTime": "20–30 днів",
     "description": "Гладка накладка 729 729-08 для настільного тенісу. Колір і доступне виконання обираються у списку варіантів. Доступність обраного варіанта підтверджує менеджер.",
     "variants": [
       "Чорний / 45 / 2.1",
@@ -1040,7 +1085,8 @@
     "isNew": false,
     "image": "images/products/729-729-08-219.webp",
     "demo": false,
-    "addedAt": "2026-10-14"
+    "addedAt": "2026-10-14",
+    "wholesalePrices": {}
   },
   {
     "id": "yinhe-uranus-pro-1264",
@@ -1050,7 +1096,7 @@
     "price": 649,
     "priceEstimated": false,
     "status": "preorder",
-    "leadTime": "Термін узгоджуємо перед оплатою",
+    "leadTime": "20–30 днів",
     "description": "Короткі шипи з губкою 2,15 мм. Доступні м’яке та середнє виконання. Доступність обраного варіанта підтверджує менеджер.",
     "variants": [
       "Чорний Середня 2.15",
@@ -1066,7 +1112,8 @@
     "isNew": false,
     "image": "images/products/yinhe-uranus-pro-1264.webp",
     "demo": false,
-    "addedAt": "2026-10-14"
+    "addedAt": "2026-10-14",
+    "wholesalePrices": {}
   },
   {
     "id": "yinhe-moon-speed-890",
@@ -1076,7 +1123,7 @@
     "price": 599,
     "priceEstimated": false,
     "status": "preorder",
-    "leadTime": "Термін узгоджуємо перед оплатою",
+    "leadTime": "20–30 днів",
     "description": "Гладка накладка Yinhe Moon Speed для настільного тенісу. Колір і доступне виконання обираються у списку варіантів. Доступність обраного варіанта підтверджує менеджер.",
     "variants": ["Чорний / Середня", "Чорний / М’яка", "Червоний / Середня", "Червоний / М’яка"],
     "specs": {
@@ -1087,7 +1134,8 @@
     "isNew": false,
     "image": "images/products/yinhe-moon-speed-890.webp",
     "demo": false,
-    "addedAt": "2026-10-14"
+    "addedAt": "2026-10-14",
+    "wholesalePrices": {}
   },
   {
     "id": "729-729-08-es-436",
@@ -1097,7 +1145,7 @@
     "price": 699,
     "priceEstimated": false,
     "status": "preorder",
-    "leadTime": "Термін узгоджуємо перед оплатою",
+    "leadTime": "20–30 днів",
     "description": "Гладка накладка 729 729-08 ES для настільного тенісу. Колір і доступне виконання обираються у списку варіантів. Доступність обраного варіанта підтверджує менеджер.",
     "variants": ["Чорний 45", "Чорний 47", "Червоний 45", "Червоний 47"],
     "specs": {
@@ -1108,7 +1156,8 @@
     "isNew": false,
     "image": "images/products/729-729-08-es-436.webp",
     "demo": false,
-    "addedAt": "2026-10-14"
+    "addedAt": "2026-10-14",
+    "wholesalePrices": {}
   },
   {
     "id": "yinhe-jupiter-iii-asia-1424",
@@ -1118,7 +1167,7 @@
     "price": 749,
     "priceEstimated": false,
     "status": "preorder",
-    "leadTime": "Термін узгоджуємо перед оплатою",
+    "leadTime": "20–30 днів",
     "description": "Гладка накладка Yinhe Jupiter III Asia для настільного тенісу. Колір і доступне виконання обираються у списку варіантів. Доступність обраного варіанта підтверджує менеджер.",
     "variants": [
       "Чорний / 37",
@@ -1140,7 +1189,8 @@
     "isNew": false,
     "image": "images/products/yinhe-jupiter-iii-asia-1424.webp",
     "demo": false,
-    "addedAt": "2026-10-14"
+    "addedAt": "2026-10-14",
+    "wholesalePrices": {}
   },
   {
     "id": "sanwei-t5000-carbon-1721318",
@@ -1150,7 +1200,7 @@
     "price": 699,
     "priceEstimated": false,
     "status": "preorder",
-    "leadTime": "Термін узгоджуємо перед оплатою",
+    "leadTime": "20–30 днів",
     "description": "Основа Sanwei T5000 Carbon. Конструкція: 5 шарів дерева + 2 карбону. Продається без накладок. Вага й товщина наведені як орієнтири партії; оформлення рукоятки може відрізнятися від фото. Доступність обраного варіанта підтверджує менеджер.",
     "variants": ["FL — розкльошена", "CS — китайське перо"],
     "specs": {
@@ -1164,7 +1214,8 @@
     "isNew": false,
     "image": "images/products/sanwei-t5000-carbon-1721318.webp",
     "demo": false,
-    "addedAt": "2026-10-14"
+    "addedAt": "2026-10-14",
+    "wholesalePrices": {}
   },
   {
     "id": "sanwei-m8-811655",
@@ -1174,7 +1225,7 @@
     "price": 649,
     "priceEstimated": false,
     "status": "preorder",
-    "leadTime": "Термін узгоджуємо перед оплатою",
+    "leadTime": "20–30 днів",
     "description": "Основа Sanwei M8. Конструкція: 5 шарів дерева. Продається без накладок. Вага й товщина наведені як орієнтири партії; оформлення рукоятки може відрізнятися від фото. Доступність обраного варіанта підтверджує менеджер.",
     "variants": ["FL — розкльошена", "CS — китайське перо"],
     "specs": {
@@ -1188,7 +1239,8 @@
     "isNew": false,
     "image": "images/products/sanwei-m8-811655.webp",
     "demo": false,
-    "addedAt": "2026-10-14"
+    "addedAt": "2026-10-14",
+    "wholesalePrices": {}
   },
   {
     "id": "yinhe-n10s-2145819",
@@ -1198,7 +1250,7 @@
     "price": 579,
     "priceEstimated": false,
     "status": "preorder",
-    "leadTime": "Термін узгоджуємо перед оплатою",
+    "leadTime": "20–30 днів",
     "description": "Основа Yinhe N10s. Конструкція: 5 шарів дерева. Продається без накладок. Вага й товщина наведені як орієнтири партії; оформлення рукоятки може відрізнятися від фото. Доступність обраного варіанта підтверджує менеджер.",
     "variants": ["FL — розкльошена"],
     "specs": {
@@ -1212,7 +1264,8 @@
     "isNew": false,
     "image": "images/products/yinhe-n10s-2145819.webp",
     "demo": false,
-    "addedAt": "2026-10-14"
+    "addedAt": "2026-10-14",
+    "wholesalePrices": {}
   },
   {
     "id": "yinhe-n9s-2144741",
@@ -1222,7 +1275,7 @@
     "price": 579,
     "priceEstimated": false,
     "status": "preorder",
-    "leadTime": "Термін узгоджуємо перед оплатою",
+    "leadTime": "20–30 днів",
     "description": "Основа Yinhe N9s. Конструкція: 5 шарів дерева. Продається без накладок. Вага й товщина наведені як орієнтири партії; оформлення рукоятки може відрізнятися від фото. Доступність обраного варіанта підтверджує менеджер.",
     "variants": ["FL — розкльошена"],
     "specs": {
@@ -1236,7 +1289,8 @@
     "isNew": false,
     "image": "images/products/yinhe-n9s-2144741.webp",
     "demo": false,
-    "addedAt": "2026-10-14"
+    "addedAt": "2026-10-14",
+    "wholesalePrices": {}
   },
   {
     "id": "sanwei-cs-811613",
@@ -1246,7 +1300,7 @@
     "price": 649,
     "priceEstimated": false,
     "status": "preorder",
-    "leadTime": "Термін узгоджуємо перед оплатою",
+    "leadTime": "20–30 днів",
     "description": "Основа Sanwei CS. Конструкція: 5 шарів дерева. Продається без накладок. Вага й товщина наведені як орієнтири партії; оформлення рукоятки може відрізнятися від фото. Доступність обраного варіанта підтверджує менеджер.",
     "variants": ["FL — розкльошена", "CS — китайське перо"],
     "specs": {
@@ -1260,7 +1314,8 @@
     "isNew": false,
     "image": "images/products/sanwei-cs-811613.webp",
     "demo": false,
-    "addedAt": "2026-10-14"
+    "addedAt": "2026-10-14",
+    "wholesalePrices": {}
   },
   {
     "id": "yinhe-n8s-2141767",
@@ -1270,7 +1325,7 @@
     "price": 599,
     "priceEstimated": false,
     "status": "preorder",
-    "leadTime": "Термін узгоджуємо перед оплатою",
+    "leadTime": "20–30 днів",
     "description": "Основа Yinhe N8S. Конструкція: 5 шарів дерева. Продається без накладок. Вага й товщина наведені як орієнтири партії; оформлення рукоятки може відрізнятися від фото. Доступність обраного варіанта підтверджує менеджер.",
     "variants": ["FL — розкльошена", "CS — китайське перо"],
     "specs": {
@@ -1284,7 +1339,8 @@
     "isNew": false,
     "image": "images/products/yinhe-n8s-2141767.webp",
     "demo": false,
-    "addedAt": "2026-10-14"
+    "addedAt": "2026-10-14",
+    "wholesalePrices": {}
   },
   {
     "id": "729-z2-1372",
@@ -1294,7 +1350,7 @@
     "price": 799,
     "priceEstimated": false,
     "status": "preorder",
-    "leadTime": "Термін узгоджуємо перед оплатою",
+    "leadTime": "20–30 днів",
     "description": "Основа 729 Z2 для складання ракетки. Доступні FL та китайське перо. Продається без накладок. Матеріали, точну вагу та товщину уточнюємо перед оплатою. Доступність обраного варіанта підтверджує менеджер.",
     "variants": ["FL — розкльошена", "CS — китайське перо"],
     "specs": {
@@ -1305,7 +1361,8 @@
     "isNew": false,
     "image": "images/products/729-z2-1372.webp",
     "demo": false,
-    "addedAt": "2026-10-14"
+    "addedAt": "2026-10-14",
+    "wholesalePrices": {}
   },
   {
     "id": "yinhe-896-2144575",
@@ -1315,7 +1372,7 @@
     "price": 649,
     "priceEstimated": false,
     "status": "preorder",
-    "leadTime": "Термін узгоджуємо перед оплатою",
+    "leadTime": "20–30 днів",
     "description": "Основа Yinhe 896. Конструкція: 5 шарів дерева. Продається без накладок. Вага й товщина наведені як орієнтири партії; оформлення рукоятки може відрізнятися від фото. Доступність обраного варіанта підтверджує менеджер.",
     "variants": ["FL — розкльошена"],
     "specs": {
@@ -1329,7 +1386,8 @@
     "isNew": false,
     "image": "images/products/yinhe-896-2144575.webp",
     "demo": false,
-    "addedAt": "2026-10-14"
+    "addedAt": "2026-10-14",
+    "wholesalePrices": {}
   },
   {
     "id": "yinhe-cn5-children-1631353",
@@ -1339,7 +1397,7 @@
     "price": 649,
     "priceEstimated": false,
     "status": "preorder",
-    "leadTime": "Термін узгоджуємо перед оплатою",
+    "leadTime": "20–30 днів",
     "description": "Полегшена дитяча основа Yinhe CN5 Children. Конструкція: 5 шарів дерева. Для початкових тренувань. Продається без накладок. Вага й товщина наведені як орієнтири партії; оформлення рукоятки може відрізнятися від фото. Доступність обраного варіанта підтверджує менеджер.",
     "variants": ["FL — розкльошена"],
     "specs": {
@@ -1353,7 +1411,8 @@
     "isNew": true,
     "image": "images/products/yinhe-cn5-children-1631353.webp",
     "demo": false,
-    "addedAt": "2026-10-14"
+    "addedAt": "2026-10-14",
+    "wholesalePrices": {}
   },
   {
     "id": "sanwei-502e-2146077",
@@ -1363,7 +1422,7 @@
     "price": 749,
     "priceEstimated": false,
     "status": "preorder",
-    "leadTime": "Термін узгоджуємо перед оплатою",
+    "leadTime": "20–30 днів",
     "description": "Основа Sanwei 502E. Конструкція: 5 шарів дерева + 2 м’якого карбону. Продається без накладок. Вага й товщина наведені як орієнтири партії; оформлення рукоятки може відрізнятися від фото. Доступність обраного варіанта підтверджує менеджер.",
     "variants": ["CS — китайське перо"],
     "specs": {
@@ -1377,7 +1436,8 @@
     "isNew": false,
     "image": "images/products/sanwei-502e-2146077.webp",
     "demo": false,
-    "addedAt": "2026-10-14"
+    "addedAt": "2026-10-14",
+    "wholesalePrices": {}
   },
   {
     "id": "729-z1-1371",
@@ -1387,7 +1447,7 @@
     "price": 899,
     "priceEstimated": false,
     "status": "preorder",
-    "leadTime": "Термін узгоджуємо перед оплатою",
+    "leadTime": "20–30 днів",
     "description": "Основа 729 Z1 для складання ракетки. Доступні FL та китайське перо. Продається без накладок. Матеріали, точну вагу та товщину уточнюємо перед оплатою. Доступність обраного варіанта підтверджує менеджер.",
     "variants": ["FL — розкльошена", "CS — китайське перо"],
     "specs": {
@@ -1398,7 +1458,8 @@
     "isNew": false,
     "image": "images/products/729-z1-1371.webp",
     "demo": false,
-    "addedAt": "2026-10-14"
+    "addedAt": "2026-10-14",
+    "wholesalePrices": {}
   },
   {
     "id": "yinhe-n11s-812416",
@@ -1408,7 +1469,7 @@
     "price": 699,
     "priceEstimated": false,
     "status": "preorder",
-    "leadTime": "Термін узгоджуємо перед оплатою",
+    "leadTime": "20–30 днів",
     "description": "Основа Yinhe N11s. Конструкція: 5 шарів дерева. Продається без накладок. Вага й товщина наведені як орієнтири партії; оформлення рукоятки може відрізнятися від фото. Доступність обраного варіанта підтверджує менеджер.",
     "variants": ["FL — розкльошена", "CS — китайське перо"],
     "specs": {
@@ -1422,7 +1483,8 @@
     "isNew": false,
     "image": "images/products/yinhe-n11s-812416.webp",
     "demo": false,
-    "addedAt": "2026-10-14"
+    "addedAt": "2026-10-14",
+    "wholesalePrices": {}
   },
   {
     "id": "sanwei-cc-carbon-811611",
@@ -1432,7 +1494,7 @@
     "price": 899,
     "priceEstimated": false,
     "status": "preorder",
-    "leadTime": "Термін узгоджуємо перед оплатою",
+    "leadTime": "20–30 днів",
     "description": "Основа Sanwei CC Carbon. Конструкція: 5 шарів дерева + 2 карбону. Продається без накладок. Вага й товщина наведені як орієнтири партії; оформлення рукоятки може відрізнятися від фото. Доступність обраного варіанта підтверджує менеджер.",
     "variants": ["FL — розкльошена", "CS — китайське перо", "ST — пряма"],
     "specs": {
@@ -1446,7 +1508,8 @@
     "isNew": false,
     "image": "images/products/sanwei-cc-carbon-811611.webp",
     "demo": false,
-    "addedAt": "2026-10-14"
+    "addedAt": "2026-10-14",
+    "wholesalePrices": {}
   },
   {
     "id": "yinhe-y-4-811288",
@@ -1456,7 +1519,7 @@
     "price": 949,
     "priceEstimated": false,
     "status": "preorder",
-    "leadTime": "Термін узгоджуємо перед оплатою",
+    "leadTime": "20–30 днів",
     "description": "Основа Yinhe Y-4. Конструкція: 3 шари дерева + 2 карбону. Продається без накладок. Вага й товщина наведені як орієнтири партії; оформлення рукоятки може відрізнятися від фото. Доступність обраного варіанта підтверджує менеджер.",
     "variants": ["FL — розкльошена", "CS — китайське перо"],
     "specs": {
@@ -1470,7 +1533,8 @@
     "isNew": false,
     "image": "images/products/yinhe-y-4-811288.webp",
     "demo": false,
-    "addedAt": "2026-10-14"
+    "addedAt": "2026-10-14",
+    "wholesalePrices": {}
   },
   {
     "id": "yinhe-mercury-y-13-2145712",
@@ -1480,7 +1544,7 @@
     "price": 1049,
     "priceEstimated": false,
     "status": "preorder",
-    "leadTime": "Термін узгоджуємо перед оплатою",
+    "leadTime": "20–30 днів",
     "description": "Основа Yinhe Mercury Y-13. Конструкція: 5 шарів дерева + 2 волокна. Продається без накладок. Вага й товщина наведені як орієнтири партії; оформлення рукоятки може відрізнятися від фото. Доступність обраного варіанта підтверджує менеджер.",
     "variants": ["FL — розкльошена", "CS — китайське перо"],
     "specs": {
@@ -1494,7 +1558,8 @@
     "isNew": false,
     "image": "images/products/yinhe-mercury-y-13-2145712.webp",
     "demo": false,
-    "addedAt": "2026-10-14"
+    "addedAt": "2026-10-14",
+    "wholesalePrices": {}
   },
   {
     "id": "yinhe-n12-1577467",
@@ -1504,7 +1569,7 @@
     "price": 749,
     "priceEstimated": false,
     "status": "preorder",
-    "leadTime": "Термін узгоджуємо перед оплатою",
+    "leadTime": "20–30 днів",
     "description": "Основа Yinhe N12. Конструкція: 5 шарів дерева. Продається без накладок. Вага й товщина наведені як орієнтири партії; оформлення рукоятки може відрізнятися від фото. Доступність обраного варіанта підтверджує менеджер.",
     "variants": ["FL — розкльошена"],
     "specs": {
@@ -1518,7 +1583,8 @@
     "isNew": false,
     "image": "images/products/yinhe-n12-1577467.webp",
     "demo": false,
-    "addedAt": "2026-10-14"
+    "addedAt": "2026-10-14",
+    "wholesalePrices": {}
   },
   {
     "id": "729-cleaner-100-1752630",
@@ -1540,7 +1606,8 @@
     "isNew": false,
     "image": "images/products/729-cleaner-100-1752630.webp",
     "demo": false,
-    "addedAt": "2026-10-14"
+    "addedAt": "2026-10-14",
+    "wholesalePrices": {}
   },
   {
     "id": "kokutaku-rubber-cleaner-100-596",
@@ -1550,7 +1617,7 @@
     "price": 199,
     "priceEstimated": false,
     "status": "preorder",
-    "leadTime": "Термін узгоджуємо перед оплатою",
+    "leadTime": "20–30 днів",
     "description": "Очищувач для гумових накладок на водній основі, 100 мл. Нанесіть невелику кількість на губку та очистіть поверхню згідно з інструкцією виробника. Доступність обраного варіанта підтверджує менеджер.",
     "variants": ["Стандартна комплектація"],
     "specs": {
@@ -1562,7 +1629,8 @@
     "isNew": false,
     "image": "images/products/kokutaku-rubber-cleaner-100-596.webp",
     "demo": false,
-    "addedAt": "2026-10-14"
+    "addedAt": "2026-10-14",
+    "wholesalePrices": {}
   },
   {
     "id": "palio-small-case-812015",
@@ -1572,7 +1640,7 @@
     "price": 199,
     "priceEstimated": false,
     "status": "preorder",
-    "leadTime": "Термін узгоджуємо перед оплатою",
+    "leadTime": "20–30 днів",
     "description": "Компактний чохол Palio для ракетки. Продається один чохол. Доступний колір та розміри уточнюємо; фото демонструє варіанти. Доступність обраного варіанта підтверджує менеджер.",
     "variants": ["Один чохол / колір узгоджується"],
     "specs": {
@@ -1583,7 +1651,8 @@
     "isNew": true,
     "image": "images/products/palio-small-case-812015.webp",
     "demo": false,
-    "addedAt": "2026-10-14"
+    "addedAt": "2026-10-14",
+    "wholesalePrices": {}
   },
   {
     "id": "yinhe-small-case-812013",
@@ -1593,7 +1662,7 @@
     "price": 199,
     "priceEstimated": false,
     "status": "preorder",
-    "leadTime": "Термін узгоджуємо перед оплатою",
+    "leadTime": "20–30 днів",
     "description": "Компактний чохол Yinhe для ракетки. Продається один чохол. Є синє та чорне виконання; малюнок може відрізнятися між партіями. Доступність обраного варіанта підтверджує менеджер.",
     "variants": ["Синій", "Чорний"],
     "specs": {
@@ -1604,7 +1673,8 @@
     "isNew": false,
     "image": "images/products/yinhe-small-case-812013.webp",
     "demo": false,
-    "addedAt": "2026-10-14"
+    "addedAt": "2026-10-14",
+    "wholesalePrices": {}
   },
   {
     "id": "yinhe-round-bat-cover-686",
@@ -1614,7 +1684,7 @@
     "price": 219,
     "priceEstimated": false,
     "status": "preorder",
-    "leadTime": "Термін узгоджуємо перед оплатою",
+    "leadTime": "20–30 днів",
     "description": "Чохол на блискавці для однієї ракетки. Продається один чохол, колір залежить від партії; фото показує можливі кольори. Доступність обраного варіанта підтверджує менеджер.",
     "variants": ["Один чохол / колір партії"],
     "specs": {
@@ -1625,7 +1695,8 @@
     "isNew": false,
     "image": "images/products/yinhe-round-bat-cover-686.webp",
     "demo": false,
-    "addedAt": "2026-10-14"
+    "addedAt": "2026-10-14",
+    "wholesalePrices": {}
   },
   {
     "id": "dhs-racket-case-red-801",
@@ -1635,7 +1706,7 @@
     "price": 449,
     "priceEstimated": false,
     "status": "preorder",
-    "leadTime": "Термін узгоджуємо перед оплатою",
+    "leadTime": "20–30 днів",
     "description": "Червоний чохол DHS для перенесення інвентарю. Місткість і внутрішню комплектацію уточнюємо перед оплатою. Доступність обраного варіанта підтверджує менеджер.",
     "variants": ["Червоний"],
     "specs": {
@@ -1646,7 +1717,8 @@
     "isNew": false,
     "image": "images/products/dhs-racket-case-red-801.webp",
     "demo": false,
-    "addedAt": "2026-10-14"
+    "addedAt": "2026-10-14",
+    "wholesalePrices": {}
   },
   {
     "id": "sanwei-3-star-abs-40-pro-6-994974",
@@ -1656,7 +1728,7 @@
     "price": 249,
     "priceEstimated": false,
     "status": "preorder",
-    "leadTime": "Термін узгоджуємо перед оплатою",
+    "leadTime": "20–30 днів",
     "description": "Білі м’ячі Sanwei ABS діаметром 40+. В упаковці шість м’ячів. Маркування серії — 3-Star PRO. Доступність обраного варіанта підтверджує менеджер.",
     "variants": ["Білі / 6 шт."],
     "specs": {
@@ -1667,7 +1739,8 @@
     "isNew": false,
     "image": "images/products/sanwei-3-star-abs-40-pro-6-994974.webp",
     "demo": false,
-    "addedAt": "2026-10-14"
+    "addedAt": "2026-10-14",
+    "wholesalePrices": {}
   },
   {
     "id": "spinpoint-6-685",
@@ -1677,7 +1750,7 @@
     "price": 99,
     "priceEstimated": false,
     "status": "preorder",
-    "leadTime": "Термін узгоджуємо перед оплатою",
+    "leadTime": "20–30 днів",
     "description": "Набір із шести губок для нанесення водного клею. Клей у комплект не входить. Доступність обраного варіанта підтверджує менеджер.",
     "variants": ["Стандартна комплектація"],
     "specs": {
@@ -1689,7 +1762,8 @@
     "image": "images/products/spinpoint-6-685.webp",
     "accessoryType": "other",
     "demo": false,
-    "addedAt": "2026-10-14"
+    "addedAt": "2026-10-14",
+    "wholesalePrices": {}
   },
   {
     "id": "spinpoint-92",
@@ -1699,7 +1773,7 @@
     "price": 79,
     "priceEstimated": false,
     "status": "preorder",
-    "leadTime": "Термін узгоджуємо перед оплатою",
+    "leadTime": "20–30 днів",
     "description": "М’яка прозора плівка для захисту поверхні накладки під час зберігання. Доступність обраного варіанта підтверджує менеджер.",
     "variants": ["Стандартна комплектація"],
     "specs": {
@@ -1711,7 +1785,8 @@
     "image": "images/products/spinpoint-92.webp",
     "accessoryType": "film",
     "demo": false,
-    "addedAt": "2026-10-14"
+    "addedAt": "2026-10-14",
+    "wholesalePrices": {}
   },
   {
     "id": "spinpoint-8-294",
@@ -1721,7 +1796,7 @@
     "price": 99,
     "priceEstimated": false,
     "status": "preorder",
-    "leadTime": "Термін узгоджуємо перед оплатою",
+    "leadTime": "20–30 днів",
     "description": "Самоклейна м’яка стрічка шириною 8 мм для захисту торця основи. Колір обирається окремо. Доступність обраного варіанта підтверджує менеджер.",
     "variants": ["Чорний", "Червоний"],
     "specs": {
@@ -1733,7 +1808,8 @@
     "image": "images/products/spinpoint-8-294.webp",
     "accessoryType": "tape",
     "demo": false,
-    "addedAt": "2026-10-14"
+    "addedAt": "2026-10-14",
+    "wholesalePrices": {}
   },
   {
     "id": "spinpoint-93",
@@ -1743,7 +1819,7 @@
     "price": 99,
     "priceEstimated": false,
     "status": "preorder",
-    "leadTime": "Термін узгоджуємо перед оплатою",
+    "leadTime": "20–30 днів",
     "description": "Клейка захисна плівка для нелипких накладок. Не використовуйте з липкими китайськими накладками: клей може залишити сліди. Доступність обраного варіанта підтверджує менеджер.",
     "variants": ["Стандартна комплектація"],
     "specs": {
@@ -1755,7 +1831,8 @@
     "image": "images/products/spinpoint-93.webp",
     "accessoryType": "film",
     "demo": false,
-    "addedAt": "2026-10-14"
+    "addedAt": "2026-10-14",
+    "wholesalePrices": {}
   },
   {
     "id": "li-du-edge-tape-1385",
@@ -1765,7 +1842,7 @@
     "price": 129,
     "priceEstimated": false,
     "status": "preorder",
-    "leadTime": "Термін узгоджуємо перед оплатою",
+    "leadTime": "20–30 днів",
     "description": "М’яка самоклейна торцева стрічка Li Du. Довжину та кількість у комплектації підтверджуємо до оплати. Доступність обраного варіанта підтверджує менеджер.",
     "variants": ["Чорний", "Синій"],
     "specs": {
@@ -1777,7 +1854,8 @@
     "image": "images/products/li-du-edge-tape-1385.webp",
     "accessoryType": "tape",
     "demo": false,
-    "addedAt": "2026-10-14"
+    "addedAt": "2026-10-14",
+    "wholesalePrices": {}
   },
   {
     "id": "spinpoint-yellow-91",
@@ -1787,7 +1865,7 @@
     "price": 99,
     "priceEstimated": false,
     "status": "preorder",
-    "leadTime": "Термін узгоджуємо перед оплатою",
+    "leadTime": "20–30 днів",
     "description": "Двостороння губка для очищення накладок. Білий бік використовується для очищення, кольоровий — для видалення зайвої вологи. Доступність обраного варіанта підтверджує менеджер.",
     "variants": ["Стандартна комплектація"],
     "specs": {
@@ -1799,7 +1877,8 @@
     "image": "images/products/spinpoint-yellow-91.webp",
     "accessoryType": "other",
     "demo": false,
-    "addedAt": "2026-10-14"
+    "addedAt": "2026-10-14",
+    "wholesalePrices": {}
   },
   {
     "id": "spinpoint-blue-90",
@@ -1809,7 +1888,7 @@
     "price": 99,
     "priceEstimated": false,
     "status": "preorder",
-    "leadTime": "Термін узгоджуємо перед оплатою",
+    "leadTime": "20–30 днів",
     "description": "Двостороння губка для очищення накладок. Білий бік використовується для очищення, кольоровий — для видалення зайвої вологи. Доступність обраного варіанта підтверджує менеджер.",
     "variants": ["Стандартна комплектація"],
     "specs": {
@@ -1821,6 +1900,7 @@
     "image": "images/products/spinpoint-blue-90.webp",
     "accessoryType": "other",
     "demo": false,
-    "addedAt": "2026-10-14"
+    "addedAt": "2026-10-14",
+    "wholesalePrices": {}
   }
 ]

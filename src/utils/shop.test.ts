@@ -200,7 +200,7 @@ describe('honest messenger handoff', () => {
     expect(cartTotal(migrated.cart, migrated.catalog!)).toBe(987);
     expect(saved.catalog[0].price).toBe(1370);
     const edited = { ...saved, catalog: [{ ...product, price: 350 }] };
-    expect(await options.migrate!(edited, 2)).toBe(edited);
-    expect(options.version).toBe(2);
+    expect(await options.migrate!(edited, 3)).toBe(edited);
+    expect(options.version).toBe(3);
   });
 });

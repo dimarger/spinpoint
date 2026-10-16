@@ -4,7 +4,8 @@ export const money = (value: number) =>
     style: 'currency',
     currency: 'UAH',
     currencyDisplay: 'narrowSymbol',
-    maximumFractionDigits: 0,
+    minimumFractionDigits: 0,
+    maximumFractionDigits: 2,
   }).format(value);
 export function filterCatalog(products: Product[], params: URLSearchParams) {
   const q = (params.get('q') || '').trim().toLocaleLowerCase('uk');

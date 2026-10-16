@@ -27,5 +27,5 @@ export const categoryLabels = {
 export const statusLabels = {
   preorder: 'Під замовлення',
   available: 'В наявності',
-  unavailable: 'Недоступний',
+  unavailable: 'Тимчасово недоступний',
 };

@@ -17,6 +17,8 @@ import { money } from '../utils/catalog';
 import { formatOrder } from '../utils/orders';
 import OrderComposer from '../components/OrderComposer';
 import { useMeta } from '../hooks/useMeta';
+import WholesalePrices from '../components/WholesalePrices';
+import { productPrice } from '../utils/pricing';
 export default function ProductPage() {
   const { id } = useParams();
   return <ProductDetails key={id} id={id} />;
@@ -32,6 +34,8 @@ function ProductDetails({ id }: { id?: string }) {
   const add = useShop((s) => s.add);
   const toggle = useShop((s) => s.toggleFavorite);
   const favorite = useShop((s) => s.favorites.includes(id || ''));
+  const wholesale = useShop((s) => s.wholesale);
+  const setWholesale = useShop((s) => s.setWholesale);
   useMeta(p ? `${p.brand} ${p.name}` : 'Товар не знайдено');
   if (!p)
     return (
@@ -41,6 +45,7 @@ function ProductDetails({ id }: { id?: string }) {
       />
     );
   const selected = p.variants.includes(variant) ? variant : p.variants[0];
+  const quote = productPrice(p, quantity, wholesale);
   return (
     <div className="container page">
       <Breadcrumbs
@@ -107,10 +112,27 @@ function ProductDetails({ id }: { id?: string }) {
             <small>Код: {p.id}</small>
           </div>
           <div className="detail-price">
+            <small className="muted">Роздріб / шт. </small>
             {money(p.price)}
             {p.demo && <span>тестова ціна</span>}
             {p.priceEstimated && <span>орієнтовна ціна</span>}
           </div>
+          <WholesalePrices product={p} />
+          <label className="checkbox-label wholesale-note">
+            <input
+              type="checkbox"
+              checked={wholesale}
+              onChange={(e) => setWholesale(e.target.checked)}
+            />
+            Малий опт
+          </label>
+          {wholesale && (
+            <p className="muted small">
+              Для {quantity} шт.:{' '}
+              {quote.unitPrice === null ? 'Ціна за запитом' : `${money(quote.unitPrice)} / шт.`}. До
+              3 шт. — роздріб. У кошику різні варіанти цієї моделі підсумовуються.
+            </p>
+          )}
           <DemoNotice />
           <label className="field-label">
             Варіант
@@ -160,13 +182,17 @@ function ProductDetails({ id }: { id?: string }) {
             <span>
               <Truck size={19} />
               <span>
-                Орієнтовний строк<small>{p.leadTime}</small>
+                {p.status === 'preorder' ? 'Орієнтовний строк' : 'Строк відправлення'}
+                <small>
+                  {p.status === 'unavailable' ? 'Уточніть доступність у менеджера' : p.leadTime}
+                </small>
               </span>
             </span>
             <span>
               <ShieldCheck size={19} />
               <span>
-                Спочатку — підтвердження<small>Ціна й умови узгоджуються до оплати</small>
+                Спочатку — підтвердження
+                <small>Остаточні строки, ціна й умови узгоджуються до оплати</small>
               </span>
             </span>
           </div>
@@ -179,7 +205,10 @@ function ProductDetails({ id }: { id?: string }) {
         <OrderComposer
           text={formatOrder(
             [{ key: p.id, productId: p.id, variant: selected, quantity }],
-            products
+            products,
+            undefined,
+            false,
+            wholesale
           )}
         />
       )}
