@@ -1,0 +1,29 @@
+# SpinPoint
+
+- Project scope: this directory; static React storefront.
+- Stack: React, TypeScript, Vite, React Router, Zustand, Zod, Motion.
+- Entry and routes: `src/main.tsx`.
+- Site settings and category/status labels: `src/config/site.ts`.
+- Public product schema: `src/types/catalog.ts`.
+- Catalog seed: `src/data/catalog.ts` imports `src/data/products.json`.
+- Public data excludes purchasing prices and supplier links.
+- Local images: `public/images`; product assets under `public/images/products`.
+- Persistent cart, favorites, theme and local catalog override: `src/stores/shop.ts`.
+- Filtering and currency formatting: `src/utils/catalog.ts`.
+- Order text, messenger links and totals: `src/utils/orders.ts`.
+- Product cards and notices: `src/components/Common.tsx`.
+- Photo display and category illustration fallback: `src/components/ProductArt.tsx`.
+- Homepage: `src/pages/Home.tsx`.
+- Catalog filters: `src/pages/Catalog.tsx`.
+- Product detail and variants: `src/pages/Product.tsx`.
+- Racket configurator: `src/pages/Builder.tsx`.
+- Cart and checkout request: `src/pages/Cart.tsx`.
+- Wholesale request: `src/pages/Wholesale.tsx`.
+- Local catalog editor and JSON import/export: `src/pages/CatalogEditor.tsx`.
+- Information pages: `src/pages/Info.tsx`.
+- Styling: `src/styles/index.css`.
+- Focused schema, filter, cart and messenger tests: `src/utils/shop.test.ts`.
+- Validation: `npm run typecheck`, `npm run lint`, `npm test`, `npm run build`.
+- Local serving: `npm run dev`; production preview: `npm run preview`.
+- Skip generated `dist`, `node_modules`, `.git` and build metadata.
+- Setup and handoff: `README.md`, `QA.md`, `SUPABASE.md`.
