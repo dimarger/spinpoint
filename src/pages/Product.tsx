@@ -104,6 +104,14 @@ function ProductDetails({ id }: { id?: string }) {
             {p.brand} / {categoryLabels[p.category]}
           </span>
           <h1>{p.name}</h1>
+          {p.bestFor && <p className="detail-intro">{p.bestFor}</p>}
+          {p.highlights && (
+            <ul className="product-highlights">
+              {p.highlights.map((item) => (
+                <li key={item}>{item}</li>
+              ))}
+            </ul>
+          )}
           <div className="detail-status">
             <span className={`stock ${p.status === 'unavailable' ? 'unavailable' : ''}`}>
               <i />
@@ -196,8 +204,12 @@ function ProductDetails({ id }: { id?: string }) {
               </span>
             </span>
           </div>
-          <Link className="text-link" to="/builder">
-            Додай модель у власну збірку <ArrowUpRight size={16} />
+          <Link
+            className="text-link"
+            to={p.category === 'rackets' ? '/catalog?category=rackets' : '/builder'}
+          >
+            {p.category === 'rackets' ? 'Порівняти готові ракетки' : 'Додай модель у власну збірку'}{' '}
+            <ArrowUpRight size={16} />
           </Link>
         </div>
       </div>
@@ -215,7 +227,21 @@ function ProductDetails({ id }: { id?: string }) {
       <div className="product-description">
         <section>
           <h2>Про модель</h2>
-          <p>{p.description}</p>
+          {p.description.split('\n\n').map((paragraph) => (
+            <p key={paragraph}>{paragraph}</p>
+          ))}
+          {p.selectionNote && (
+            <div className="selection-note">
+              <h3>Що врахувати при виборі</h3>
+              <p>{p.selectionNote}</p>
+            </div>
+          )}
+          {p.care && (
+            <details className="care-details">
+              <summary>Догляд і зберігання</summary>
+              <p>{p.care}</p>
+            </details>
+          )}
         </section>
         <section>
           <h2>Характеристики</h2>
@@ -228,8 +254,8 @@ function ProductDetails({ id }: { id?: string }) {
             ))}
           </dl>
           <p className="muted small">
-            Непідтверджені швидкість, обертання, контроль, жорсткість, вага й матеріали не
-            вказуються.
+            Порівнюйте однакові версії: жорсткість, товщина, рукоятка й комплектація впливають на
+            вибір. Рейтинги різних виробників не є єдиною шкалою.
           </p>
         </section>
       </div>

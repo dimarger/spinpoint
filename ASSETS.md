@@ -1,5 +1,20 @@
 # Зображення каталогу
 
+## Готові ракетки, додано 21.10.2026
+
+Справжні фотографії моделей збережено локально без генеративної зміни товару. Версії накладок та комплектацію потрібно зіставляти з погодженою партією; це пояснено в картках.
+
+- `palio-2-star.jpg`: https://i.ebayimg.com/images/g/r-AAAeSwXatovttq/s-l1200.jpg — на фото CJ2000, не CJ8000.
+- `palio-2-star-case.jpg`: https://i.ebayimg.com/images/g/A2oAAOSw-Rhabb9j/s-l1200.jpg
+- `palio-3-star.jpg`: https://img.joomcdn.net/35b5895b1749b217585948cf09a1e590e2e4ffa3_original.jpeg
+- `palio-3-star-case.jpg`: https://images.nexusapp.co/assets/1b/49/b2/506336249.jpg
+- `dhs-h4002.png`: https://dhssportsusa.com/cdn/shop/files/0_946ccccc-a4e7-4482-be4a-2a63c657fc55.png?v=1781230581&width=533
+- `dhs-h4002-case.jpg`: https://www.wttc.com.au/1201-medium_default/dhs-h4002-4-stars-shakehand-table-tennis-racket-long-handle-with-case.jpg
+
+Джерела конструкції та версій: https://dhssportsusa.com/products/dhs-h4002-4-star-table-tennis-racket та https://prom.ua/ua/p405289603-palio-star-raketka.html . Закупівельні ціни й посилання постачальників зберігаються окремо від публічного репозиторію.
+
+## Попередні 80 позицій
+
 Каталог використовує локальні WebP у `public/images/products/`. Кожен файл названий за публічним ID моделі. Прозорість зберігається в alpha-каналі; фону чи цінових плашок у файлах немає.
 
 Фотографії відповідних товарних карток оброблено вбудованим ImageGen. Вихідні зображення, походження й приватний розрахунок закупки зберігаються окремо від публічного сайту. Обробка фону не підтверджує автентичність або якість фізичної партії. Права на комерційне використання фотографій потрібно погодити з їхніми власниками.

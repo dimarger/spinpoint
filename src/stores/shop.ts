@@ -99,29 +99,45 @@ export const useShop = create<ShopState>()(
     }),
     {
       name: 'spinpoint-shop-v1',
-      version: 3,
+      version: 4,
       storage: createJSONStorage(() => safeStorage),
       migrate: (persisted, version) => {
-        if (version >= 3 || !persisted || typeof persisted !== 'object') return persisted;
+        if (version >= 4 || !persisted || typeof persisted !== 'object') return persisted;
         const previous = persisted as Partial<ShopState>;
         const catalog = catalogSchema.safeParse(previous.catalog);
         if (!catalog.success) return persisted;
         const prices = new Map(initialCatalog.map((p) => [p.id, p]));
         return {
           ...previous,
-          catalog: catalog.data.map((p) => {
-            const updated = prices.get(p.id);
-            return {
-              ...p,
-              ...(updated && version < 2
-                ? { price: updated.price, priceEstimated: updated.priceEstimated }
-                : {}),
-              leadTime:
-                p.status === 'preorder' && p.leadTime === 'Термін узгоджуємо перед оплатою'
-                  ? '20–30 днів'
-                  : p.leadTime,
-            };
-          }),
+          catalog: [
+            ...catalog.data.map((p) => {
+              const updated = prices.get(p.id);
+              return {
+                ...p,
+                ...(updated
+                  ? {
+                      summary: updated.summary,
+                      bestFor: updated.bestFor,
+                      highlights: updated.highlights,
+                      selectionNote: updated.selectionNote,
+                      care: updated.care,
+                      specs: { ...updated.specs, ...p.specs },
+                    }
+                  : {}),
+                ...(updated && version < 2
+                  ? { price: updated.price, priceEstimated: updated.priceEstimated }
+                  : {}),
+                leadTime:
+                  p.status === 'preorder' && p.leadTime === 'Термін узгоджуємо перед оплатою'
+                    ? '20–30 днів'
+                    : p.leadTime,
+              };
+            }),
+            ...initialCatalog.filter(
+              (p) =>
+                p.category === 'rackets' && !catalog.data.some((existing) => existing.id === p.id)
+            ),
+          ],
         };
       },
       merge: (persisted, current) => {

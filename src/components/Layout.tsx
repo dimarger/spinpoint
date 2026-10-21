@@ -38,6 +38,7 @@ function NavItems() {
       <NavLink to="/catalog">
         Каталог <ChevronDown size={13} />
       </NavLink>
+      <Link to="/catalog?category=rackets">Готові ракетки</Link>
       <NavLink className="builder-link" to="/builder">
         Конструктор ракетки
       </NavLink>

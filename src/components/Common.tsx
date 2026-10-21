@@ -34,6 +34,7 @@ export function ProductCard({ product: p, list = false }: { product: Product; li
         <Link className="product-name" to={`/product/${p.id}`}>
           {p.name}
         </Link>
+        {p.summary && <p className="product-summary">{p.summary}</p>}
         <span className={`stock ${p.status === 'unavailable' ? 'unavailable' : ''}`}>
           <i />
           {statusLabels[p.status]}

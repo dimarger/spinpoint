@@ -1,4 +1,5 @@
 @import 'tailwindcss';
+@import './arena.css';
 @theme {
   --font-sans: 'Segoe UI', Arial, sans-serif;
 }

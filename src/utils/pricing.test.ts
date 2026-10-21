@@ -151,6 +151,6 @@ describe('B2B data compatibility and persistence', () => {
     expect(merged.cart).toEqual(saved.cart);
     expect(merged.favorites).toEqual(saved.favorites);
     expect(merged.wholesale).toBe(true);
-    expect(options.version).toBe(3);
+    expect(options.version).toBe(4);
   });
 });

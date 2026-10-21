@@ -6,8 +6,9 @@ import { assemblyFee, cartTotal, formatOrder, telegramUrl, viberUrl } from './or
 import { useShop } from '../stores/shop';
 import { siteConfig } from '../config/site';
 describe('public catalog schema', () => {
-  it('validates all 80 sourced products and identifies duplicate IDs', () => {
-    expect(initialCatalog).toHaveLength(80);
+  it('validates the expanded catalog and identifies duplicate IDs', () => {
+    expect(initialCatalog).toHaveLength(83);
+    expect(initialCatalog.filter((p) => p.category === 'rackets')).toHaveLength(3);
     expect(catalogSchema.safeParse(initialCatalog).success).toBe(true);
     expect(catalogSchema.safeParse([...initialCatalog, initialCatalog[0]]).success).toBe(false);
   });
@@ -200,7 +201,12 @@ describe('honest messenger handoff', () => {
     expect(cartTotal(migrated.cart, migrated.catalog!)).toBe(987);
     expect(saved.catalog[0].price).toBe(1370);
     const edited = { ...saved, catalog: [{ ...product, price: 350 }] };
-    expect(await options.migrate!(edited, 3)).toBe(edited);
-    expect(options.version).toBe(3);
+    const refreshed = options.merge!(await options.migrate!(edited, 3), useShop.getState());
+    expect(refreshed.catalog![0].price).toBe(350);
+    expect(refreshed.catalog![0].bestFor).toBe(product.bestFor);
+    expect(refreshed.catalog!.filter((p) => p.category === 'rackets')).toHaveLength(3);
+    expect(refreshed.catalog!.some((p) => p.id === 'palio-ck531a-ox-245')).toBe(false);
+    expect(await options.migrate!(edited, 4)).toBe(edited);
+    expect(options.version).toBe(4);
   });
 });

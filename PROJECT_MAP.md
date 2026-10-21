@@ -15,7 +15,8 @@
 - Public tier display and preorder terms: `src/components/WholesalePrices.tsx`.
 - Product cards and notices: `src/components/Common.tsx`.
 - Photo display and category illustration fallback: `src/components/ProductArt.tsx`.
-- Homepage: `src/pages/Home.tsx`.
+- Homepage: `src/pages/Home.tsx` re-exports `HomeArena.tsx`; skill-level tabs and racket sections.
+- Scoped scroll reveals: `src/components/Reveal.tsx`, using existing Motion with reduced-motion support.
 - Catalog filters: `src/pages/Catalog.tsx`.
 - Product detail and variants: `src/pages/Product.tsx`.
 - Racket configurator: `src/pages/Builder.tsx`.
